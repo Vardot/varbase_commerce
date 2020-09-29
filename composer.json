@@ -1,0 +1,44 @@
+{
+  "name": "drupal/varbase_commerce",
+  "description": "Provides a starting point for Varbase merchandise section and the products catalog.",
+  "type": "drupal-module",
+  "homepage": "https://www.drupal.org/project/varbase_commerce",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Vardot",
+      "homepage": "https://www.drupal.org/vardot",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/varbase_commerce",
+    "source": "http://cgit.drupalcode.org/varbase_commerce"
+  },
+  "require": {
+    "composer/installers": "~1.0",
+    "oomphinc/composer-installers-extender": "~1.0",
+    "cweagans/composer-patches": "~1.0",
+    "drupal/drupal-library-installer-plugin": "^0.3",
+    "drupal/core": "^8.8.0 || ~9.0.0",
+    "drupal/commerce": "~2.0",
+    "drupal/commerce_shipping": "~1.0",
+    "drupal/commerce_simple_stock": "~1.0",
+    "drupal/commerce_reports": "~1.0",
+    "drupal/commerce_cart_flyout": "^1.0",
+    "drupal/commerce_smart_importer": "~1.0"
+  },
+  "extra": {
+    "enable-patching": true,
+    "composer-exit-on-patch-failure": true,
+    "patches": {
+      "drupal/commerce_cart_flyout": {
+          "Issue #3075270: Consider Separating count_text into two values": "https://www.drupal.org/files/issues/2020-04-30/consider-separate-count_text-into-two-values-3075270-2.patch",
+          "Issue #3056466: Always open cart flyout": "https://www.drupal.org/files/issues/2020-07-07/always_open_cart_flyout-3056466-4.patch",
+          "Issue #3144651: Add quantity to form": "https://www.drupal.org/files/issues/2020-09-27/add-quantity-field_3144651_2.patch"
+      }
+    }
+  }
+}

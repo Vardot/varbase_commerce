@@ -1,0 +1,14 @@
+name: Varbase Commerce
+type: module
+description: Provides a starting point for Varbase merchandise section and the products catalog.
+package: Varbase
+core_version_requirement: ^8 || ^9
+dependencies:
+  - commerce:commerce
+  - commerce_reports:commerce_reports
+install:
+  - commerce:commerce_cart
+  - commerce:commerce_product
+  - commerce:commerce_checkout
+  - commerce_shipping:commerce_shipping
+  - commerce_cart_flyout:commerce_cart_flyout

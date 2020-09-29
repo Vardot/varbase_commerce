@@ -7,8 +7,8 @@ dependencies:
   - commerce:commerce
   - commerce_reports:commerce_reports
 install:
-  - commerce:commerce_cart
-  - commerce:commerce_product
-  - commerce:commerce_checkout
-  - commerce_shipping:commerce_shipping
-  - commerce_cart_flyout:commerce_cart_flyout
+  - commerce_cart
+  - commerce_product
+  - commerce_checkout
+  - commerce_shipping
+  - commerce_cart_flyout

@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update for Varbase Media module.
+ */
+
+use Symfony\Component\Yaml\Yaml;
+
+/**
+ * Implements hook_install().
+ */
+function varbase_commerce_install() {
+
+  $module_name = preg_replace('/_install$/', '', __FUNCTION__);
+  $module_path = Drupal::service('module_handler')->getModule($module_name)->getPath();
+
+  // Processor for install key in [$module_name].info.yml file.
+  // --------------------------------------------------------------------------.
+  $module_info_file = $module_path . '/' . $module_name . '.info.yml';
+  if (file_exists($module_info_file)) {
+    $module_info_data = (array) Yaml::parse(file_get_contents($module_info_file));
+    if (isset($module_info_data['install'])
+      && is_array($module_info_data['install'])) {
+      \Drupal::service('module_installer')->install($module_info_data['install'], TRUE);
+    }
+  }
+}

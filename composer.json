@@ -24,7 +24,7 @@
     "drupal/drupal-library-installer-plugin": "^0.3",
     "drupal/core": "^8.8.0 || ~9.0.0",
     "drupal/commerce": "~2.0",
-    "drupal/commerce_shipping": "~1.0",
+    "drupal/commerce_shipping": "~2.0",
     "drupal/commerce_simple_stock": "~1.0",
     "drupal/commerce_reports": "~1.0",
     "drupal/commerce_cart_flyout": "^1.0",

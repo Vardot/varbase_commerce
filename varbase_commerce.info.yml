@@ -12,3 +12,7 @@ install:
   - commerce_checkout
   - commerce_shipping
   - commerce_cart_flyout
+  - search_api
+  - search_api_autocomplete
+  - facets
+  - facets_block

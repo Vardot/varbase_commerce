@@ -28,7 +28,10 @@
     "drupal/commerce_simple_stock": "~1.0",
     "drupal/commerce_reports": "~1.0",
     "drupal/commerce_cart_flyout": "^1.0",
-    "drupal/commerce_smart_importer": "~1.0"
+    "drupal/search_api": "~1.0",
+    "drupal/search_api_autocomplete": "~1.0",
+    "drupal/facets": "~1.0",
+    "drupal/facets_block": "~1.0"
   },
   "extra": {
     "enable-patching": true,

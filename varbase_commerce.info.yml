@@ -5,10 +5,10 @@ package: Varbase
 core_version_requirement: ^8 || ^9
 dependencies:
   - commerce:commerce
-  - commerce_reports:commerce_reports
-install:
   - commerce_cart
   - commerce_product
+  - commerce_reports:commerce_reports
+install:
   - commerce_checkout
   - commerce_shipping
   - commerce_cart_flyout
@@ -16,3 +16,4 @@ install:
   - search_api_autocomplete
   - facets
   - facets_block
+  - better_exposed_filters

@@ -1,0 +1,10 @@
+uuid: 3a75119e-006e-4d29-99bb-66b3e0d580ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.autocomplete_teaser
+label: 'Autocomplete teaser'
+targetEntityType: commerce_product
+cache: true

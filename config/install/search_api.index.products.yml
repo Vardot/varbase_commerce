@@ -2,6 +2,8 @@ uuid: 1576ca00-73a2-4ac8-9998-c7af0d8eb548
 langcode: en
 status: false
 dependencies:
+  config:
+    - field.storage.commerce_product.body
   module:
     - commerce_product
     - search_api
@@ -10,6 +12,14 @@ name: Products
 description: ''
 read_only: false
 field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:commerce_product'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.body
   created:
     label: Created
     datasource_id: 'entity:commerce_product'

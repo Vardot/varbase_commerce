@@ -17,7 +17,8 @@ suggester_settings:
     fields: {  }
     view_modes:
       'entity:commerce_product':
-        default: autocomplete_teaser
+        default: default
+        physical: autocomplete_teaser
 suggester_weights:
   live_results: 0
 suggester_limits: {  }

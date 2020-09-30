@@ -5,6 +5,7 @@ dependencies:
   config:
     - search_api.index.products
     - views.view.products_search
+    - core.entity_view_mode.commerce_product.autocomplete_teaser
   module:
     - views
     - search_api_autocomplete
@@ -16,7 +17,7 @@ suggester_settings:
     fields: {  }
     view_modes:
       'entity:commerce_product':
-        default: ''
+        default: autocomplete_teaser
 suggester_weights:
   live_results: 0
 suggester_limits: {  }

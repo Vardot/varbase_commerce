@@ -1,0 +1,19 @@
+uuid: af8b7dc9-2956-41b3-956c-819b6c4b7ae1
+langcode: en
+status: false
+dependencies: {  }
+id: cash_on_delivery
+label: 'Cash on Delivery'
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: ''
+    format: plain_text
+  display_label: 'Cash on Delivery'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

@@ -1,17 +1,17 @@
-uuid: 7cb05252-b6b5-4827-8afe-9c5dc7b72b61
+uuid: 528a394a-1711-41eb-af4c-20621b75b2e2
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_type.merchandise
-    - field.field.commerce_product.merchandise.body
+    - commerce_product.commerce_product_type.physical
+    - field.field.commerce_product.physical.body
   module:
     - commerce
     - path
     - text
-id: commerce_product.merchandise.default
+id: commerce_product.physical.default
 targetEntityType: commerce_product
-bundle: merchandise
+bundle: physical
 mode: default
 content:
   body:

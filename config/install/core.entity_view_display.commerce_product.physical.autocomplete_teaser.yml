@@ -1,17 +1,23 @@
-uuid: 7e9906c3-582e-4f02-8b0e-e0cd089b043f
+uuid: 6b40e831-f435-4d80-943d-c50859619543
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_type.merchandise
-    - field.field.commerce_product.merchandise.body
+    - commerce_product.commerce_product_type.physical
+    - core.entity_view_mode.commerce_product.autocomplete_teaser
+    - field.field.commerce_product.physical.body
   module:
     - commerce_product
+    - layout_builder
     - text
-id: commerce_product.merchandise.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: commerce_product.physical.autocomplete_teaser
 targetEntityType: commerce_product
-bundle: merchandise
-mode: default
+bundle: physical
+mode: autocomplete_teaser
 content:
   body:
     label: hidden

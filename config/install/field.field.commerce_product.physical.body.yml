@@ -1,16 +1,16 @@
-uuid: 7ca1b333-30ad-4936-bb68-a8176416f646
+uuid: dd0fd695-2cab-4552-8732-bcf8ca90ffb6
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_type.merchandise
+    - commerce_product.commerce_product_type.physical
     - field.storage.commerce_product.body
   module:
     - text
-id: commerce_product.merchandise.body
+id: commerce_product.physical.body
 field_name: body
 entity_type: commerce_product
-bundle: merchandise
+bundle: physical
 label: Body
 description: ''
 required: false

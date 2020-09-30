@@ -1,11 +1,11 @@
-uuid: 06203ac3-1e3e-4528-9cfc-b08bf5eef378
+uuid: 2749b0ff-bb00-4f3b-9051-dff890a14ae3
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_type.merchandise
+    - commerce_product.commerce_product_type.physical
     - core.entity_view_mode.commerce_product.main_teaser
-    - field.field.commerce_product.merchandise.body
+    - field.field.commerce_product.physical.body
   module:
     - commerce_product
     - layout_builder
@@ -14,9 +14,9 @@ third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-id: commerce_product.merchandise.main_teaser
+id: commerce_product.physical.main_teaser
 targetEntityType: commerce_product
-bundle: merchandise
+bundle: physical
 mode: main_teaser
 content:
   body:

@@ -1,0 +1,10 @@
+uuid: a76d8bab-aec5-4bfe-93ea-8ce0cbd89efa
+langcode: en
+status: true
+dependencies: {  }
+id: physical
+label: Physical
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

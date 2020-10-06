@@ -11,7 +11,7 @@ id: commerce_product.physical.body
 field_name: body
 entity_type: commerce_product
 bundle: physical
-label: Body
+label: Description
 description: ''
 required: false
 translatable: true

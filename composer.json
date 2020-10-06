@@ -32,7 +32,10 @@
     "drupal/search_api_autocomplete": "~1.0",
     "drupal/facets": "~1.0",
     "drupal/facets_block": "~1.0",
-    "drupal/better_exposed_filters": "~5.0"
+    "drupal/better_exposed_filters": "~5.0",
+    "drupal/fivestar": "~1.0",
+    "drupal/color_field": "~2.4",
+    "drupal/term_reference_tree": "~1.0"
   },
   "extra": {
     "enable-patching": true,
@@ -42,6 +45,9 @@
           "Issue #3075270: Consider Separating count_text into two values": "https://www.drupal.org/files/issues/2020-04-30/consider-separate-count_text-into-two-values-3075270-2.patch",
           "Issue #3056466: Always open cart flyout": "https://www.drupal.org/files/issues/2020-07-07/always_open_cart_flyout-3056466-4.patch",
           "Issue #3144651: Add quantity to form": "https://www.drupal.org/files/issues/2020-09-27/add-quantity-field_3144651_2.patch"
+      },
+      "drupal/term_reference_tree": {
+        "Issue #3174879: Fix compatibility with claro theme": "https://www.drupal.org/files/issues/2020-10-05/fix_compatibility_with_claro-3174879-2.patch"
       }
     }
   }

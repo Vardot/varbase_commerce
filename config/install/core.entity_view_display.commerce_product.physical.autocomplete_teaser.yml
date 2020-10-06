@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_type.physical
     - core.entity_view_mode.commerce_product.autocomplete_teaser
     - field.field.commerce_product.physical.body
+    - field.field.commerce_product.physical.field_category
   module:
     - commerce_product
     - layout_builder
@@ -49,6 +50,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_category: true
   langcode: true
   search_api_excerpt: true
   stores: true

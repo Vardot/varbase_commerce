@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.physical
     - field.field.commerce_product.physical.body
+    - field.field.commerce_product.physical.field_category
   module:
     - commerce_product
     - text
@@ -19,6 +20,14 @@ content:
     weight: 11
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_category:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   flag_wishlist:
     weight: 10

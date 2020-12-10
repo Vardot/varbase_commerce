@@ -1,0 +1,10 @@
+uuid: 6a34ea52-a51b-48ba-b90f-77174226c96a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.secondary_teaser
+label: 'Secondary teaser'
+targetEntityType: commerce_product
+cache: true

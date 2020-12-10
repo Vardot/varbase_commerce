@@ -1,0 +1,28 @@
+uuid: a2f24468-8c8e-4ce6-980f-71e5405447df
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.size
+    - commerce_product.commerce_product_variation_type.physical
+    - field.storage.commerce_product_variation.attribute_size
+id: commerce_product_variation.physical.attribute_size
+field_name: attribute_size
+entity_type: commerce_product_variation
+bundle: physical
+label: Size
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      size: size
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

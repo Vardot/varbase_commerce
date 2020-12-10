@@ -1,0 +1,23 @@
+uuid: 3453764a-8eed-4020-aa4f-2999de7c2c8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.physical
+    - field.storage.commerce_product_variation.field_stock
+id: commerce_product_variation.physical.field_stock
+field_name: field_stock
+entity_type: commerce_product_variation
+bundle: physical
+label: stock
+description: 'Amount of products in stock.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

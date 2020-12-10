@@ -1,6 +1,6 @@
 uuid: af8b7dc9-2956-41b3-956c-819b6c4b7ae1
 langcode: en
-status: false
+status: true
 dependencies: {  }
 id: cash_on_delivery
 label: 'Cash on Delivery'

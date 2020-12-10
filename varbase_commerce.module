@@ -4,3 +4,27 @@
  * @file
  * Primary module hooks for Varbase Commerce module.
  */
+
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_views_pre_execute().
+ */
+function varbase_commerce_views_query_alter(ViewExecutable $view) {
+  // Get related products from current product page category.
+  if ($view->id() == 'products' && $view->current_display == 'related_products_block') {
+    $product = \Drupal::routeMatch()->getParameter('commerce_product');
+    // Exclude current product.
+    if ($product) {
+      $view->query->addWhere('1', 'commerce_product_field_data.product_id', $product->id(), '<>');
+      if ($categories = $product->field_category->getValue()) {
+        foreach ($categories as $category) {
+          $category_ids[] = $category['target_id'];
+        }
+        if (isset($category_ids)) {
+          $view->query->where[0]['conditions'][0]['value'][':commerce_product__field_category_field_category_target_id[]'] = $category_ids;
+        }
+      }
+    }
+  }
+}

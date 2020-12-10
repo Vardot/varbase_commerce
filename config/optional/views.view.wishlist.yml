@@ -1,22 +1,24 @@
-uuid: d0337fcb-6eeb-475d-b9bd-da649ea55479
+uuid: 9c08f53d-da37-49f7-8752-e83cc8d87183
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.products
+    - core.entity_view_mode.commerce_product.main_teaser
+    - flag.flag.wishlist
   module:
-    - better_exposed_filters
-    - search_api
+    - commerce_product
+    - ds
+    - flag
     - user
     - views_bootstrap
     - views_infinite_scroll
-id: products_search
-label: 'Products Search'
+id: wishlist
+label: Wishlist
 module: views
-description: 'Provides products listing with autocomplete filter integrated with search API.'
+description: 'Provides a list of products added to a user''s wishlist.'
 tag: ''
-base_table: search_api_index_products
-base_field: search_api_id
+base_table: commerce_product_field_data
+base_field: product_id
 display:
   default:
     display_plugin: default
@@ -27,60 +29,32 @@ display:
       access:
         type: perm
         options:
-          perm: 'view commerce_product'
+          perm: 'flag wishlist'
       cache:
         type: tag
         options: {  }
       query:
         type: views_query
         options:
-          bypass_access: false
-          skip_access: false
-          preserve_facet_query_args: false
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
       exposed_form:
-        type: bef
+        type: basic
         options:
           submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          expose_sort_order: false
+          expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Select any filter and click on Apply to see results'
-          text_input_required_format: full_html
-          bef:
-            general:
-              autosubmit: true
-              autosubmit_exclude_textfield: false
-              autosubmit_textfield_delay: 500
-              autosubmit_hide: true
-              input_required: false
-              allow_secondary: false
-              secondary_label: 'Advanced options'
-              secondary_open: false
-            sort:
-              plugin_id: default
-              advanced:
-                combine: false
-                combine_rewrite: ''
-                reset: false
-                reset_label: ''
-                collapsible: false
-                collapsible_label: 'Sort options'
-                is_secondary: false
-            filter:
-              search_api_fulltext:
-                plugin_id: default
-                advanced:
-                  rewrite:
-                    filter_rewrite_values: ''
-                  collapsible: false
-                  is_secondary: false
       pager:
         type: infinite_scroll
         options:
-          items_per_page: 15
+          items_per_page: 9
           offset: 0
           id: 0
           total_pages: null
@@ -104,21 +78,49 @@ display:
           row_class: ''
           default_row_class: true
           uses_fields: false
-          col_xs: col-12
+          col_xs: col-6
           col_sm: col-sm-6
           col_md: col-md-6
           col_lg: col-lg-4
           col_xl: col-xl-4
       row:
-        type: search_api
+        type: 'ds_entity:commerce_product'
+        options:
+          relationship: none
+          view_mode: main_teaser
+          alternating_fieldset:
+            alternating: false
+            allpages: false
+            item_0: default
+            item_1: default
+            item_2: default
+            item_3: default
+            item_4: default
+            item_5: default
+            item_6: default
+            item_7: default
+            item_8: default
+            item_9: default
+            item_10: default
+            item_11: default
+            item_12: default
+            item_13: default
+            item_14: default
+            item_15: default
+          grouping_fieldset:
+            group: false
+            group_field: commerce_product_field_data|status
+            group_field_function: ''
+          advanced_fieldset:
+            advanced: false
       fields:
-        created:
-          table: search_api_index_products
-          field: created
-          id: created
+        title:
+          table: commerce_product_field_data
+          field: title
+          id: title
           entity_type: null
-          entity_field: null
-          plugin_id: search_api_field
+          entity_field: title
+          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
@@ -164,7 +166,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: timestamp
+          type: string
           settings: {  }
           group_column: value
           group_columns: {  }
@@ -176,69 +178,24 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api_date
-          fallback_options:
-            date_format: small
-            custom_date_format: ''
-            timezone: ''
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
       filters:
-        search_api_fulltext:
-          id: search_api_fulltext
-          table: search_api_index_products
-          field: search_api_fulltext
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: ''
-          group: 1
-          exposed: true
+        status:
+          value: '1'
+          table: commerce_product_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: commerce_product
+          entity_field: status
+          id: status
           expose:
-            operator_id: search_api_fulltext_op
-            label: Search
-            description: ''
-            use_operator: false
-            operator: search_api_fulltext_op
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
-            identifier: text
-            required: true
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              content_admin: '0'
-              seo_admin: '0'
-              site_admin: '0'
-              administrator: '0'
-            placeholder: Search
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          parse_mode: terms
-          min_length: null
-          fields: {  }
-          plugin_id: search_api_fulltext
-        search_api_language:
-          id: search_api_language
-          table: search_api_index_products
-          field: search_api_language
+          group: 1
+        langcode:
+          id: langcode
+          table: commerce_product_field_data
+          field: langcode
           relationship: none
           group_type: group
           admin_label: ''
@@ -274,45 +231,25 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: search_api_language
+          entity_type: commerce_product
+          entity_field: langcode
+          plugin_id: language
       sorts:
-        created:
-          id: created
-          table: search_api_index_products
-          field: created
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
           relationship: none
           group_type: group
-          admin_label: 'Latest products'
+          admin_label: ''
           order: DESC
-          exposed: true
+          exposed: false
           expose:
-            label: 'Latest products'
-          plugin_id: search_api
-        number:
-          id: number
-          table: search_api_index_products
-          field: number
-          relationship: none
-          group_type: group
-          admin_label: 'Price (high to low)'
-          order: DESC
-          exposed: true
-          expose:
-            label: 'Price (high to low)'
-          plugin_id: search_api
-        number_1:
-          id: number_1
-          table: search_api_index_products
-          field: number
-          relationship: none
-          group_type: group
-          admin_label: 'Price (low to high)'
-          order: ASC
-          exposed: true
-          expose:
-            label: 'Price (low to high)'
-          plugin_id: search_api
-      title: Search
+            label: ''
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: standard
+      title: 'My Wishlist'
       header: {  }
       footer: {  }
       empty:
@@ -325,9 +262,21 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No products found.'
+          content: 'You have no items in your wishlist.'
           plugin_id: text_custom
-      relationships: {  }
+      relationships:
+        flag_relationship:
+          id: flag_relationship
+          table: commerce_product_field_data
+          field: flag_relationship
+          relationship: none
+          group_type: group
+          admin_label: Flags
+          required: true
+          flag: wishlist
+          user_scope: current
+          entity_type: commerce_product
+          plugin_id: flag_relationship
       arguments: {  }
       display_extenders: {  }
       use_ajax: true
@@ -336,28 +285,23 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
-        - 'url.query_args:sort_by'
         - user.permissions
       tags: {  }
-  products_search:
+  page_wishlist:
     display_plugin: page
-    id: products_search
-    display_title: 'Search Page'
+    id: page_wishlist
+    display_title: Page
     position: 1
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      path: search
-      display_description: ''
+      path: user/wishlist
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
-        - 'url.query_args:sort_by'
         - user.permissions
       tags: {  }

@@ -10,14 +10,21 @@ dependencies:
   - commerce_reports:commerce_reports
 install:
   - comment
+  - views_data_export
   - commerce_checkout
   - commerce_shipping
+  - commerce_simple_stock
+  - commerce_payment
   - commerce_cart_flyout
+  - commerce_tax
+  - commerce_promotion
   - fivestar
+  - flag
   - search_api
   - search_api_autocomplete
   - facets
   - facets_block
   - better_exposed_filters
+  - entityqueue
   - color_field
   - term_reference_tree

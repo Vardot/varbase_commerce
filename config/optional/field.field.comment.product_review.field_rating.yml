@@ -1,0 +1,29 @@
+uuid: 6a56eaa8-fe1f-4711-a97e-a358078e81af
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.product_review
+    - field.storage.comment.field_rating
+  module:
+    - fivestar
+id: comment.product_review.field_rating
+field_name: field_rating
+entity_type: comment
+bundle: product_review
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  stars: 5
+  allow_clear: false
+  allow_revote: true
+  allow_ownvote: true
+  rated_while: editing
+  enable_voting_target: true
+  target_bridge_field: entity_id
+  target_fivestar_field: field_product_rating
+field_type: fivestar

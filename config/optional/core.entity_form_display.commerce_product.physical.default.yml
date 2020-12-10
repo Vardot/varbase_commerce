@@ -1,0 +1,193 @@
+uuid: 528a394a-1711-41eb-af4c-20621b75b2e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.physical
+    - field.field.commerce_product.physical.body
+    - field.field.commerce_product.physical.field_category
+    - field.field.commerce_product.physical.field_product_rating
+    - field.field.commerce_product.physical.field_product_reviews
+  module:
+    - comment
+    - commerce
+    - entity_browser_entity_form
+    - field_group
+    - inline_entity_form
+    - path
+    - term_reference_tree
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_basic_information
+        - group_details
+        - group_variations
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: Tabs
+    group_basic_information:
+      children:
+        - title
+        - field_category
+        - body
+      parent_name: group_tabs
+      weight: 17
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Basic information'
+    group_details:
+      children:
+        - field_product_reviews
+      parent_name: group_tabs
+      weight: 18
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Details
+    group_variations:
+      children:
+        - variations
+      parent_name: group_tabs
+      weight: 19
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Variations
+id: commerce_product.physical.default
+targetEntityType: commerce_product
+bundle: physical
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_category:
+    weight: 3
+    settings:
+      start_minimized: true
+      select_parents: true
+      cascading_selection: 0
+      max_depth: 0
+      leaves_only: false
+    third_party_settings: {  }
+    type: term_reference_tree
+    region: content
+  field_product_reviews:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  stores:
+    type: commerce_entity_select
+    weight: 1
+    region: content
+    settings:
+      hide_single_entity: true
+      autocomplete_threshold: 7
+      autocomplete_size: 60
+      autocomplete_placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  variations:
+    type: inline_entity_form_complex
+    weight: 20
+    region: content
+    settings:
+      form_mode: default
+      revision: true
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_edit: true
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+hidden:
+  feeds_item: true
+  field_product_rating: true

@@ -1,0 +1,8 @@
+uuid: c7e24d4c-9310-4a9b-acff-518de079bab4
+langcode: en
+status: true
+dependencies: {  }
+id: product_review
+label: 'Product Review'
+target_entity_type_id: commerce_product
+description: 'A review for a product.'

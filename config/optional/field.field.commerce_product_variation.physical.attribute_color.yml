@@ -12,7 +12,7 @@ entity_type: commerce_product_variation
 bundle: physical
 label: Color
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -20,5 +20,9 @@ settings:
   handler: 'default:commerce_product_attribute_value'
   handler_settings:
     target_bundles:
-      - color
+      color: color
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

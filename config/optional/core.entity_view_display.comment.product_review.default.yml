@@ -1,0 +1,46 @@
+uuid: 99e50606-eb0d-4033-9807-48d5c458b755
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.product_review
+    - field.field.comment.product_review.comment_body
+    - field.field.comment.product_review.field_body
+    - field.field.comment.product_review.field_rating
+  module:
+    - ds
+    - fivestar
+id: comment.product_review.default
+targetEntityType: comment
+bundle: product_review
+mode: default
+content:
+  field_body:
+    type: basic_string
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_rating:
+    type: fivestar_stars
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      fivestar_widget: basic
+      display_format: average
+      text_format: none
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+hidden:
+  comment_body: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

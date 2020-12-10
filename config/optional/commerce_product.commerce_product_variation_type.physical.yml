@@ -5,6 +5,7 @@ dependencies: {  }
 id: physical
 label: Physical
 orderItemType: default
-generateTitle: false
-traits: {  }
+generateTitle: true
+traits:
+  - purchasable_entity_shippable
 locked: false

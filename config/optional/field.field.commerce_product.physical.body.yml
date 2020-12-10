@@ -6,7 +6,14 @@ dependencies:
     - commerce_product.commerce_product_type.physical
     - field.storage.commerce_product.body
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    full_html: '0'
+    basic_html: '0'
+    code_html: '0'
+    plain_text: '0'
 id: commerce_product.physical.body
 field_name: body
 entity_type: commerce_product

@@ -1,0 +1,147 @@
+uuid: 50898b5c-4d14-40c9-addd-5548c53832f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.physical
+    - field.field.commerce_product_variation.physical.attribute_color
+    - field.field.commerce_product_variation.physical.attribute_size
+    - field.field.commerce_product_variation.physical.field_images
+    - field.field.commerce_product_variation.physical.field_stock
+    - field.field.commerce_product_variation.physical.weight
+  module:
+    - commerce_price
+    - field_group
+    - media_library
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_basic_info
+        - group_media
+        - group_attributes
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_basic_info:
+      children:
+        - sku
+        - list_price
+        - price
+        - field_stock
+      parent_name: group_tabs
+      weight: 0
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Basic information'
+    group_attributes:
+      children:
+        - attribute_color
+        - attribute_size
+      parent_name: group_tabs
+      weight: 2
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Attributes
+    group_media:
+      children:
+        - field_images
+      parent_name: group_tabs
+      weight: 1
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Media
+id: commerce_product_variation.physical.default
+targetEntityType: commerce_product_variation
+bundle: physical
+mode: default
+content:
+  attribute_color:
+    type: options_select
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  attribute_size:
+    type: options_select
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_images:
+    type: media_library_widget
+    weight: 7
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_stock:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  list_price:
+    type: commerce_list_price
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  title: true
+  uid: true
+  weight: true

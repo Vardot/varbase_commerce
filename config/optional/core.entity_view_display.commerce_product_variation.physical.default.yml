@@ -5,10 +5,13 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.physical
     - field.field.commerce_product_variation.physical.attribute_color
+    - field.field.commerce_product_variation.physical.attribute_size
     - field.field.commerce_product_variation.physical.field_images
     - field.field.commerce_product_variation.physical.field_stock
+    - field.field.commerce_product_variation.physical.weight
   module:
-    - commerce_price
+    - commerce_order
+    - ds
 id: commerce_product_variation.physical.default
 targetEntityType: commerce_product_variation
 bundle: physical
@@ -17,35 +20,63 @@ content:
   field_images:
     type: entity_reference_entity_view
     weight: 2
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
   list_price:
-    label: above
-    type: commerce_price_default
+    label: hidden
+    type: commerce_price_calculated
     weight: 0
     region: content
     settings:
-      strip_trailing_zeroes: false
       currency_display: symbol
-    third_party_settings: {  }
+      adjustment_types:
+        tax: tax
+        fee: '0'
+        promotion: '0'
+        shipping: '0'
+        shipping_promotion: '0'
+      strip_trailing_zeroes: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   price:
-    label: above
-    type: commerce_price_default
+    label: hidden
+    type: commerce_price_calculated
     weight: 1
     region: content
     settings:
-      strip_trailing_zeroes: false
       currency_display: symbol
-    third_party_settings: {  }
+      adjustment_types:
+        tax: tax
+        fee: '0'
+        promotion: '0'
+        shipping: '0'
+        shipping_promotion: '0'
+      strip_trailing_zeroes: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
 hidden:
   attribute_color: true
+  attribute_size: true
   field_stock: true
   langcode: true
   product_id: true
   search_api_excerpt: true
   sku: true
   title: true
+  weight: true

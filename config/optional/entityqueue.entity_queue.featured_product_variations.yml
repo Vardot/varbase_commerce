@@ -1,0 +1,25 @@
+uuid: 8fb2bd15-11e2-46f6-9a43-d63c0884254f
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: featured_product_variations
+label: 'Featured product variations'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: commerce_product_variation
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      physical: physical
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

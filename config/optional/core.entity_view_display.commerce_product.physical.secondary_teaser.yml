@@ -1,0 +1,70 @@
+uuid: 64b01f2d-74b6-4786-8c66-58e45aaeb7fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.physical
+    - core.entity_view_mode.commerce_product.secondary_teaser
+    - field.field.commerce_product.physical.body
+    - field.field.commerce_product.physical.field_category
+    - field.field.commerce_product.physical.field_product_rating
+    - field.field.commerce_product.physical.field_product_reviews
+  module:
+    - ds
+    - layout_builder
+    - smart_trim
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: commerce_product.physical.secondary_teaser
+targetEntityType: commerce_product
+bundle: physical
+mode: secondary_teaser
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 1
+    settings:
+      trim_length: 40
+      trim_type: words
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  feeds_item: true
+  field_category: true
+  field_product_rating: true
+  field_product_reviews: true
+  flag_wishlist: true
+  langcode: true
+  search_api_excerpt: true
+  stores: true
+  uid: true
+  variations: true

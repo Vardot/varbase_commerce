@@ -1,0 +1,25 @@
+uuid: 2f94a878-0fd2-4325-9f16-4e7ff8c29fa9
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: homepage_featured_product
+label: 'Homepage - Featured Product'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: commerce_product
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      physical: physical
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

@@ -18,16 +18,16 @@
     "source": "http://cgit.drupalcode.org/varbase_commerce"
   },
   "require": {
-    "composer/installers": "~1.0",
-    "oomphinc/composer-installers-extender": "~1.0",
+    "composer/installers": "~1.0 || ~2.0",
+    "oomphinc/composer-installers-extender": "~1.0 || ~2.0",
     "cweagans/composer-patches": "~1.0",
-    "drupal/drupal-library-installer-plugin": "^0.3",
     "drupal/core": "^8.8.0 || ~9.0.0",
     "drupal/commerce": "~2.0",
     "drupal/commerce_shipping": "~2.0",
     "drupal/commerce_simple_stock": "~1.0",
     "drupal/commerce_reports": "~1.0",
     "drupal/commerce_cart_flyout": "^1.0",
+    "drupal/commerce_wishlist":"~3.0",
     "drupal/search_api": "~1.0",
     "drupal/search_api_autocomplete": "~1.0",
     "drupal/facets": "~1.0",
@@ -35,12 +35,20 @@
     "drupal/better_exposed_filters": "~5.0",
     "drupal/fivestar": "~1.0",
     "drupal/color_field": "~2.4",
-    "drupal/term_reference_tree": "~1.0"
+    "drupal/term_reference_tree": "~1.0",
+    "drupal/views_data_export": "~1.0",
+    "drupal/colorbox": "~1.6"
   },
   "extra": {
     "enable-patching": true,
     "composer-exit-on-patch-failure": true,
     "patches": {
+      "drupal/commerce_shipping": {
+        "Issue #3170419: Move all Shipping Conditions to the Shipping Category": "https://www.drupal.org/files/issues/2020-09-24/commerce_shipping-Shipping_Conditions_Category-3170419-2.patch",
+        "Issue #3067035: Provide shipping_address condition for the commerce_order entity type": "https://www.drupal.org/files/issues/2020-09-24/commerce_shipping-Shipping_Address_condtion-3067035-4.patch",
+        "Issue #2976252: Provide billing by shipping condition": "https://www.drupal.org/files/issues/2020-11-04/provide_shipping_condition-2976252-10.patch",
+        "Issue #2849756: Auto-recalculate shipping when the address changes": "https://www.drupal.org/files/issues/2020-11-09/2849756-178.patch"
+      },
       "drupal/commerce_cart_flyout": {
           "Issue #3069639: Disable typeof-symbol transform for IE11 support when using typeof": "https://www.drupal.org/files/issues/2020-11-22/3069639-9.patch",
           "Issue #3075270: Consider Separating count_text into two values": "https://www.drupal.org/files/issues/2020-04-30/consider-separate-count_text-into-two-values-3075270-2.patch",

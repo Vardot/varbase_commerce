@@ -50,9 +50,7 @@
         "Issue #3067035: Provide shipping_address condition for the commerce_order entity type":
         "https://www.drupal.org/files/issues/2020-09-24/commerce_shipping-Shipping_Address_condtion-3067035-4.patch",
         "Issue #2976252: Provide billing by shipping condition":
-        "https://www.drupal.org/files/issues/2021-07-13/provide_shipping_condition-2976252-17.patch",
-        "Issue #2849756: Auto-recalculate shipping when the address changes":
-        "https://www.drupal.org/files/issues/2020-11-09/2849756-178.patch"
+        "https://www.drupal.org/files/issues/2021-07-13/provide_shipping_condition-2976252-17.patch"
       },
       "drupal/commerce_cart_flyout": {
         "Issue #3069639: Disable typeof-symbol transform for IE11 support when using typeof":

@@ -1,4 +1,3 @@
-uuid: 30b2cf9c-1f27-4311-852c-107bd7e0718a
 langcode: en
 status: true
 dependencies:
@@ -12,8 +11,6 @@ dependencies:
     - serialization
     - user
     - views_data_export
-_core:
-  default_config_hash: ms0oVO9RXwtdwKEAW_ZAieXlokRYoDiWfZb9EXQqIdc
 id: purchased_items_report
 label: 'Purchased items report'
 module: views

@@ -1,4 +1,3 @@
-uuid: 7ac2ac10-f4f2-49b2-9f84-dd3ee9845b43
 langcode: en
 status: true
 dependencies:
@@ -14,8 +13,6 @@ dependencies:
     - state_machine
     - user
     - views_data_export
-_core:
-  default_config_hash: dRRMNojl8xToRlJsicf6zKM8sCx0KbtzgIniFFRA-t8
 id: commerce_orders
 label: Orders
 module: views

@@ -1,4 +1,3 @@
-uuid: f552bcf4-7e19-4d82-97d9-26766617112b
 langcode: en
 status: true
 dependencies:
@@ -11,8 +10,6 @@ dependencies:
     - commerce_price
     - commerce_product
     - views_bootstrap
-_core:
-  default_config_hash: 5aCvI0j7w2fKsWcMEiLXM1CWuaKm5ndfOnCATVUMPGM
 id: commerce_cart_form
 label: 'Cart form'
 module: views

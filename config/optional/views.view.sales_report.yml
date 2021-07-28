@@ -1,4 +1,3 @@
-uuid: 4f4c0e81-45f8-4174-8c3e-e081c3d35af5
 langcode: en
 status: true
 dependencies:
@@ -11,8 +10,6 @@ dependencies:
     - serialization
     - user
     - views_data_export
-_core:
-  default_config_hash: so_RMdAzRT31PqmKxmzAYuNtypuCer0T2BQPpFIVgSo
 id: sales_report
 label: 'Sales report'
 module: views

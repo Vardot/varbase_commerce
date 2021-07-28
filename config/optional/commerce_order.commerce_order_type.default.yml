@@ -1,4 +1,3 @@
-uuid: 4011bd0c-f089-4a34-821a-62ed7db15a92
 langcode: en
 status: true
 dependencies:
@@ -15,8 +14,6 @@ third_party_settings:
     checkout_flow: shipping
   commerce_shipping:
     shipment_type: default
-_core:
-  default_config_hash: bROz7kd1J83kDf06qdZztYFSezi6UrfwftyJo53rNt4
 label: Default
 id: default
 workflow: order_default

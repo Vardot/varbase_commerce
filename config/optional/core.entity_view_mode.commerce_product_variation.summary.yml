@@ -1,4 +1,3 @@
-uuid: 181a4f01-ab3f-426a-b2fb-532785006b86
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
       - commerce_checkout
   module:
     - commerce_product
-_core:
-  default_config_hash: 23R0npqqL2T9F-gDL2Lor2GfZj_lDvmv-kwdQzPCxMw
 id: commerce_product_variation.summary
 label: Summary
 targetEntityType: commerce_product_variation

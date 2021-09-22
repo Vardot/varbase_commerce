@@ -11,11 +11,11 @@ field_name: field_color
 entity_type: commerce_product_attribute_value
 bundle: color
 label: Color
-description: ''
+description: ""
 required: true
 translatable: false
-default_value: {  }
-default_value_callback: ''
+default_value: {}
+default_value_callback: ""
 settings:
   opacity: 0
 field_type: color_field_type

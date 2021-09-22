@@ -9,20 +9,20 @@ dependencies:
     - views
     - search_api_autocomplete
 id: products_search
-label: 'Products Search'
+label: "Products Search"
 index_id: products
 suggester_settings:
   live_results:
-    fields: {  }
+    fields: {}
     view_modes:
-      'entity:commerce_product':
+      "entity:commerce_product":
         default: default
         physical: autocomplete_teaser
 suggester_weights:
   live_results: 0
-suggester_limits: {  }
+suggester_limits: {}
 search_settings:
-  'views:products_search':
+  "views:products_search":
     displays:
       default: false
       selected:
@@ -32,5 +32,5 @@ options:
   min_length: 1
   show_count: false
   autosubmit: true
-  submit_button_selector: ':submit'
+  submit_button_selector: ":submit"
   delay: null

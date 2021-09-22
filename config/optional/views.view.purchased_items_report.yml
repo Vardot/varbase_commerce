@@ -12,10 +12,10 @@ dependencies:
     - user
     - views_data_export
 id: purchased_items_report
-label: 'Purchased items report'
+label: "Purchased items report"
 module: views
-description: ''
-tag: ''
+description: ""
+tag: ""
 base_table: commerce_order_report
 base_field: report_id
 display:
@@ -27,25 +27,25 @@ display:
     display_options:
       access:
         type: none
-        options: {  }
+        options: {}
       cache:
         type: tag
-        options: {  }
+        options: {}
       query:
         type: views_query
         options:
           disable_sql_rewrite: false
           distinct: false
           replica: false
-          query_comment: ''
-          query_tags: {  }
+          query_comment: ""
+          query_tags: {}
       exposed_form:
         type: basic
         options:
           submit_button: Apply
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: "Sort by"
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -58,10 +58,10 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_label: "Items per page"
+            items_per_page_options: "5, 10, 25, 50"
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: "- All -"
             offset: false
             offset_label: Offset
           tags:
@@ -78,45 +78,45 @@ display:
           field: title
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Title
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -125,14 +125,14 @@ display:
           settings:
             link_to_entity: false
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           plugin_id: field
         title_1:
@@ -141,61 +141,61 @@ display:
           field: title
           relationship: none
           group_type: count
-          admin_label: ''
-          label: '# of Purchases'
+          admin_label: ""
+          label: "# of Purchases"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           click_sort_column: value
           type: string
-          settings: {  }
+          settings: {}
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -210,64 +210,64 @@ display:
           field: quantity
           relationship: none
           group_type: avg
-          admin_label: ''
-          label: 'Average Quantity'
+          admin_label: ""
+          label: "Average Quantity"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: number_decimal
           settings:
-            thousand_separator: ''
+            thousand_separator: ""
             prefix_suffix: true
             decimal_separator: .
             scale: 2
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           plugin_id: field
         total_price:
@@ -276,45 +276,45 @@ display:
           field: total_price
           relationship: none
           group_type: sum
-          admin_label: ''
-          label: 'Total price'
+          admin_label: ""
+          label: "Total price"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -324,14 +324,14 @@ display:
             strip_trailing_zeroes: false
             display_currency_code: false
           group_column: number
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           plugin_id: field
         unit_price:
@@ -340,45 +340,45 @@ display:
           field: unit_price
           relationship: none
           group_type: sum
-          admin_label: ''
-          label: 'Unit price'
+          admin_label: ""
+          label: "Unit price"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -388,14 +388,14 @@ display:
             strip_trailing_zeroes: false
             display_currency_code: false
           group_column: number
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           plugin_id: field
       filters:
@@ -410,7 +410,7 @@ display:
           plugin_id: commerce_entity_bundle
           expose:
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
       sorts:
         title_value:
           id: title_value
@@ -418,35 +418,35 @@ display:
           field: title_value
           relationship: none
           group_type: count
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: false
           expose:
-            label: '# of Purchases'
+            label: "# of Purchases"
           plugin_id: standard
-      title: 'Purchased items report'
-      header: {  }
-      footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
-      display_extenders: {  }
+      title: "Purchased items report"
+      header: {}
+      footer: {}
+      empty: {}
+      relationships: {}
+      arguments: {}
+      display_extenders: {}
       group_by: true
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - url.query_args
-      tags: {  }
+      tags: {}
   data_export_purchased_items:
     display_plugin: data_export
     id: data_export_purchased_items
-    display_title: 'Data export'
+    display_title: "Data export"
     position: 1
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender: {}
       path: admin/commerce/reports/purchased-items/export
       filename: purchased-items.csv
       automatic_download: true
@@ -456,11 +456,11 @@ display:
       include_query_params: false
       displays:
         page_1: page_1
-        default: '0'
+        default: "0"
       access:
         type: perm
         options:
-          perm: 'access commerce reports'
+          perm: "access commerce reports"
       defaults:
         access: false
         sorts: false
@@ -470,13 +470,13 @@ display:
           formats:
             csv: csv
           csv_settings:
-            delimiter: ','
+            delimiter: ","
             enclosure: '"'
             escape_char: \
             strip_tags: true
             trim: true
             encoding: utf8
-            utf8_bom: '0'
+            utf8_bom: "0"
             use_serializer_encode_only: false
       sorts:
         title_value:
@@ -485,41 +485,41 @@ display:
           field: title_value
           relationship: none
           group_type: count
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: false
           expose:
-            label: '# of Purchases'
+            label: "# of Purchases"
           plugin_id: standard
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - request_format
         - user.permissions
-      tags: {  }
+      tags: {}
   page_1:
     display_plugin: page
     id: page_1
     display_title: Page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders: {}
       path: admin/commerce/reports/purchased-items
       menu:
         type: normal
-        title: 'Purchased items report'
-        description: ''
+        title: "Purchased items report"
+        description: ""
         expanded: false
         parent: commerce_reports.overview
         weight: 0
-        context: '0'
+        context: "0"
         menu_name: admin
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - url.query_args
-      tags: {  }
+      tags: {}

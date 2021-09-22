@@ -1,18 +1,18 @@
 langcode: en
 status: false
-dependencies: {  }
+dependencies: {}
 id: bank_transfer
-label: 'Bank Transfer'
+label: "Bank Transfer"
 weight: null
 plugin: manual
 configuration:
   instructions:
-    value: ''
+    value: ""
     format: plain_text
   display_label: Manual
   mode: n/a
   payment_method_types:
     - credit_card
   collect_billing_information: true
-conditions: {  }
+conditions: {}
 conditionOperator: AND

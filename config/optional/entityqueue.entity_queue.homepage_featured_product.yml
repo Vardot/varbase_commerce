@@ -4,19 +4,19 @@ dependencies:
   module:
     - commerce_product
 id: homepage_featured_product
-label: 'Homepage - Featured Product'
+label: "Homepage - Featured Product"
 handler: simple
-handler_configuration: {  }
+handler_configuration: {}
 entity_settings:
   target_type: commerce_product
-  handler: 'default:commerce_product'
+  handler: "default:commerce_product"
   handler_settings:
     target_bundles:
       physical: physical
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: ""
 queue_settings:
   min_size: 0
   max_size: 0

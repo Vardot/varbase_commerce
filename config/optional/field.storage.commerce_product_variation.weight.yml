@@ -14,6 +14,6 @@ module: physical
 locked: true
 cardinality: 1
 translatable: false
-indexes: {  }
+indexes: {}
 persist_with_no_fields: false
 custom_storage: false

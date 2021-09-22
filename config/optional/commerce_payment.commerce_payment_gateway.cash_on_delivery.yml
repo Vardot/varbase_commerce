@@ -1,18 +1,18 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies: {}
 id: cash_on_delivery
-label: 'Cash on Delivery'
+label: "Cash on Delivery"
 weight: null
 plugin: manual
 configuration:
   instructions:
-    value: ''
+    value: ""
     format: plain_text
-  display_label: 'Cash on Delivery'
+  display_label: "Cash on Delivery"
   mode: n/a
   payment_method_types:
     - credit_card
   collect_billing_information: true
-conditions: {  }
+conditions: {}
 conditionOperator: AND

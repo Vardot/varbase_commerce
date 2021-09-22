@@ -9,14 +9,14 @@ field_name: field_stock
 entity_type: commerce_product_variation
 bundle: physical
 label: stock
-description: 'Amount of products in stock.'
+description: "Amount of products in stock."
 required: false
 translatable: false
-default_value: {  }
-default_value_callback: ''
+default_value: {}
+default_value_callback: ""
 settings:
   min: 0
   max: null
-  prefix: ''
-  suffix: ''
+  prefix: ""
+  suffix: ""
 field_type: integer

@@ -9,11 +9,11 @@ field_name: field_color
 entity_type: commerce_product_attribute_value
 type: color_field_type
 settings:
-  format: '#HEXHEX'
+  format: "#HEXHEX"
 module: color_field
 locked: false
 cardinality: 1
 translatable: true
-indexes: {  }
+indexes: {}
 persist_with_no_fields: false
 custom_storage: false

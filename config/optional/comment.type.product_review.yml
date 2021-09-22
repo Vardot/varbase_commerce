@@ -1,7 +1,7 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies: {}
 id: product_review
-label: 'Product Review'
+label: "Product Review"
 target_entity_type_id: commerce_product
-description: 'A review for a product.'
+description: "A review for a product."

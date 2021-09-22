@@ -13,15 +13,15 @@ weight: -4
 min_count: 1
 show_only_one_result: false
 field_identifier: field_category
-facet_source_id: 'search_api:views_block__products_search__all_products_block'
+facet_source_id: "search_api:views_block__products_search__all_products_block"
 widget:
   type: checkbox
   config:
     show_numbers: false
     soft_limit: 0
     soft_limit_settings:
-      show_less_label: 'Show less'
-      show_more_label: 'Show more'
+      show_less_label: "Show less"
+      show_more_label: "Show more"
     show_reset_link: false
     reset_text: Reset
     hide_reset_when_no_selection: false
@@ -55,13 +55,13 @@ processor_configs:
     processor_id: translate_entity
     weights:
       build: -7
-    settings: {  }
+    settings: {}
   url_processor_handler:
     processor_id: url_processor_handler
     weights:
       pre_query: 50
       build: -8
-    settings: {  }
+    settings: {}
 empty_behavior:
   behavior: none
 show_title: false

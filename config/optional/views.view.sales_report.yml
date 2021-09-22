@@ -11,10 +11,10 @@ dependencies:
     - user
     - views_data_export
 id: sales_report
-label: 'Sales report'
+label: "Sales report"
 module: views
-description: ''
-tag: ''
+description: ""
+tag: ""
 base_table: commerce_order_report
 base_field: report_id
 display:
@@ -27,29 +27,29 @@ display:
       access:
         type: perm
         options:
-          perm: 'access commerce reports'
+          perm: "access commerce reports"
       cache:
         type: tag
-        options: {  }
+        options: {}
       query:
         type: views_query
         options:
           disable_sql_rewrite: false
           distinct: false
           replica: false
-          query_comment: ''
-          query_tags: {  }
+          query_comment: ""
+          query_tags: {}
       exposed_form:
         type: bef
         options:
           submit_button: Apply
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: "Sort by"
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required: "Select any filter and click on Apply to see results"
           text_input_required_format: full_html
           bef:
             general:
@@ -59,17 +59,17 @@ display:
               autosubmit_hide: false
               input_required: false
               allow_secondary: false
-              secondary_label: 'Advanced options'
+              secondary_label: "Advanced options"
               secondary_open: false
             sort:
               plugin_id: default
               advanced:
                 combine: false
-                combine_rewrite: ''
+                combine_rewrite: ""
                 reset: false
-                reset_label: ''
+                reset_label: ""
                 collapsible: false
-                collapsible_label: 'Sort options'
+                collapsible_label: "Sort options"
                 is_secondary: false
             filter:
               created:
@@ -92,45 +92,45 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Date
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -138,17 +138,17 @@ display:
           type: timestamp
           settings:
             date_format: html_month
-            custom_date_format: ''
-            timezone: ''
+            custom_date_format: ""
+            timezone: ""
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           entity_type: commerce_order_report
           entity_field: created
@@ -159,61 +159,61 @@ display:
           field: report_id
           relationship: none
           group_type: count
-          admin_label: ''
-          label: '# of Orders'
+          admin_label: ""
+          label: "# of Orders"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           click_sort_column: value
           type: number_integer
-          settings: {  }
+          settings: {}
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -230,61 +230,61 @@ display:
           field: amount
           relationship: none
           group_type: sum
-          admin_label: ''
-          label: 'Total Revenue'
+          admin_label: ""
+          label: "Total Revenue"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -299,61 +299,61 @@ display:
           field: amount
           relationship: none
           group_type: avg
-          admin_label: ''
-          label: 'Average Order'
+          admin_label: ""
+          label: "Average Order"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -374,57 +374,57 @@ display:
           plugin_id: commerce_entity_bundle
           expose:
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
         created:
           id: created
           table: commerce_order_report
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           operator: between
           value:
-            min: ''
-            max: ''
-            value: ''
+            min: ""
+            max: ""
+            value: ""
             type: date
           group: 1
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Order date'
-            description: ''
+            label: "Order date"
+            description: ""
             use_operator: false
             operator: created_op
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
             identifier: date
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              content_admin: '0'
-              seo_admin: '0'
-              site_admin: '0'
-              administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
+              anonymous: "0"
+              editor: "0"
+              content_admin: "0"
+              seo_admin: "0"
+              site_admin: "0"
+              administrator: "0"
+            placeholder: ""
+            min_placeholder: ""
+            max_placeholder: ""
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: ""
+            description: ""
+            identifier: ""
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+            default_group_multiple: {}
+            group_items: {}
           entity_type: commerce_order_report
           entity_field: created
           plugin_id: date
@@ -435,40 +435,40 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: false
           expose:
-            label: 'Order date'
+            label: "Order date"
           granularity: month
           entity_type: commerce_order_report
           entity_field: created
           plugin_id: date
-      title: 'Monthly sales report'
-      header: {  }
-      footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
-      display_extenders: {  }
+      title: "Monthly sales report"
+      header: {}
+      footer: {}
+      empty: {}
+      relationships: {}
+      arguments: {}
+      display_extenders: {}
       group_by: true
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - url
         - user.permissions
-      tags: {  }
+      tags: {}
   daily:
     display_plugin: page
     id: daily
     display_title: Daily
     position: 2
     display_options:
-      display_extenders: {  }
-      display_description: ''
-      title: 'Daily sales report'
+      display_extenders: {}
+      display_description: ""
+      title: "Daily sales report"
       defaults:
         title: false
         fields: false
@@ -479,11 +479,11 @@ display:
       menu:
         type: tab
         title: Daily
-        description: ''
+        description: ""
         expanded: false
         parent: commerce_reports.overview
         weight: 10
-        context: '0'
+        context: "0"
         menu_name: admin
       fields:
         created:
@@ -492,45 +492,45 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Date
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -538,17 +538,17 @@ display:
           type: timestamp
           settings:
             date_format: html_date
-            custom_date_format: ''
-            timezone: ''
+            custom_date_format: ""
+            timezone: ""
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           entity_type: commerce_order_report
           entity_field: created
@@ -559,61 +559,61 @@ display:
           field: report_id
           relationship: none
           group_type: count
-          admin_label: ''
-          label: '# of Orders'
+          admin_label: ""
+          label: "# of Orders"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           click_sort_column: value
           type: number_integer
-          settings: {  }
+          settings: {}
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -630,61 +630,61 @@ display:
           field: amount
           relationship: none
           group_type: sum
-          admin_label: ''
-          label: 'Total Revenue'
+          admin_label: ""
+          label: "Total Revenue"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -699,61 +699,61 @@ display:
           field: amount
           relationship: none
           group_type: avg
-          admin_label: ''
-          label: 'Average Order'
+          admin_label: ""
+          label: "Average Order"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -769,11 +769,11 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: true
           expose:
-            label: 'Order date'
+            label: "Order date"
           granularity: day
           entity_type: commerce_order_report
           entity_field: created
@@ -790,57 +790,57 @@ display:
           plugin_id: commerce_entity_bundle
           expose:
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
         created:
           id: created
           table: commerce_order_report
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           operator: between
           value:
-            min: ''
-            max: ''
-            value: ''
+            min: ""
+            max: ""
+            value: ""
             type: date
           group: 1
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Order date'
-            description: ''
+            label: "Order date"
+            description: ""
             use_operator: false
             operator: created_op
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
             identifier: date
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              content_admin: '0'
-              seo_admin: '0'
-              site_admin: '0'
-              administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
+              anonymous: "0"
+              editor: "0"
+              content_admin: "0"
+              seo_admin: "0"
+              site_admin: "0"
+              administrator: "0"
+            placeholder: ""
+            min_placeholder: ""
+            max_placeholder: ""
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: ""
+            description: ""
+            identifier: ""
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+            default_group_multiple: {}
+            group_items: {}
           entity_type: commerce_order_report
           entity_field: created
           plugin_id: date
@@ -851,23 +851,23 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - url
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
+        - "url.query_args:sort_by"
+        - "url.query_args:sort_order"
         - user.permissions
-      tags: {  }
+      tags: {}
   data_export_daily:
     display_plugin: data_export
     id: data_export_daily
-    display_title: 'Daily - Data export'
+    display_title: "Daily - Data export"
     position: 2
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
-      display_description: ''
-      title: 'Daily sales report'
+        metatag_display_extender: {}
+      display_description: ""
+      title: "Daily sales report"
       defaults:
         title: false
         fields: false
@@ -882,45 +882,45 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Date
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -928,17 +928,17 @@ display:
           type: timestamp
           settings:
             date_format: html_date
-            custom_date_format: ''
-            timezone: ''
+            custom_date_format: ""
+            timezone: ""
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           entity_type: commerce_order_report
           entity_field: created
@@ -949,61 +949,61 @@ display:
           field: report_id
           relationship: none
           group_type: count
-          admin_label: ''
-          label: '# of Orders'
+          admin_label: ""
+          label: "# of Orders"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           click_sort_column: value
           type: number_integer
-          settings: {  }
+          settings: {}
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -1020,61 +1020,61 @@ display:
           field: amount
           relationship: none
           group_type: sum
-          admin_label: ''
-          label: 'Total Revenue'
+          admin_label: ""
+          label: "Total Revenue"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -1089,61 +1089,61 @@ display:
           field: amount
           relationship: none
           group_type: avg
-          admin_label: ''
-          label: 'Average Order'
+          admin_label: ""
+          label: "Average Order"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -1159,11 +1159,11 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: true
           expose:
-            label: 'Order date'
+            label: "Order date"
           granularity: day
           entity_type: commerce_order_report
           entity_field: created
@@ -1180,26 +1180,26 @@ display:
           plugin_id: commerce_entity_bundle
           expose:
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
         created:
           id: created
           table: commerce_order_report
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           operator: between
           value:
-            min: '-180 days'
-            max: 'last day of this year'
-            value: ''
+            min: "-180 days"
+            max: "last day of this year"
+            value: ""
             type: offset
           group: 1
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Order date'
-            description: ''
+            label: "Order date"
+            description: ""
             use_operator: false
             operator: created_op
             identifier: date
@@ -1208,26 +1208,26 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              store_admin: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
+              anonymous: "0"
+              administrator: "0"
+              store_admin: "0"
+            placeholder: ""
+            min_placeholder: ""
+            max_placeholder: ""
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: ""
+            description: ""
+            identifier: ""
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+            default_group_multiple: {}
+            group_items: {}
           entity_type: commerce_order_report
           entity_field: created
           plugin_id: date
@@ -1247,43 +1247,43 @@ display:
           formats:
             csv: csv
           csv_settings:
-            delimiter: ','
+            delimiter: ","
             enclosure: '"'
             escape_char: \
             strip_tags: true
             trim: true
             encoding: utf8
-            utf8_bom: '0'
+            utf8_bom: "0"
             use_serializer_encode_only: false
       export_method: standard
       export_batch_size: 1000
       displays:
         daily: daily
-        default: '0'
-        monthly: '0'
-        weekly: '0'
-        yearly: '0'
+        default: "0"
+        monthly: "0"
+        weekly: "0"
+        yearly: "0"
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - request_format
         - url
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
+        - "url.query_args:sort_by"
+        - "url.query_args:sort_order"
         - user.permissions
-      tags: {  }
+      tags: {}
   data_export_monthly:
     display_plugin: data_export
     id: data_export_monthly
-    display_title: 'Monthly - Data export'
+    display_title: "Monthly - Data export"
     position: 1
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender: {}
       path: admin/commerce/reports/sales/monthly/export
-      display_description: ''
+      display_description: ""
       filename: monthly-report.csv
       automatic_download: true
       store_in_public_file_directory: null
@@ -1295,36 +1295,36 @@ display:
         options:
           field_options:
             created:
-              alias: ''
+              alias: ""
               raw_output: false
             report_id:
-              alias: ''
+              alias: ""
               raw_output: false
             amount:
-              alias: ''
+              alias: ""
               raw_output: false
             amount_1:
-              alias: ''
+              alias: ""
               raw_output: false
       displays:
         monthly: monthly
-        default: '0'
-        daily: '0'
-        weekly: '0'
-        yearly: '0'
+        default: "0"
+        daily: "0"
+        weekly: "0"
+        yearly: "0"
       style:
         type: data_export
         options:
           formats:
             csv: csv
           csv_settings:
-            delimiter: ','
+            delimiter: ","
             enclosure: '"'
             escape_char: \
             strip_tags: true
             trim: true
             encoding: utf8
-            utf8_bom: '0'
+            utf8_bom: "0"
             use_serializer_encode_only: false
       sorts:
         created:
@@ -1333,11 +1333,11 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: false
           expose:
-            label: 'Order date'
+            label: "Order date"
           granularity: month
           entity_type: commerce_order_report
           entity_field: created
@@ -1347,22 +1347,22 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - request_format
         - url
         - user.permissions
-      tags: {  }
+      tags: {}
   data_export_weekly:
     display_plugin: data_export
     id: data_export_weekly
-    display_title: 'Weekly - Data export'
+    display_title: "Weekly - Data export"
     position: 2
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
-      display_description: ''
-      title: 'Weekly sales report'
+        metatag_display_extender: {}
+      display_description: ""
+      title: "Weekly sales report"
       defaults:
         title: false
         fields: false
@@ -1377,45 +1377,45 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Date
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -1424,16 +1424,16 @@ display:
           settings:
             date_format: custom
             custom_date_format: Y-W
-            timezone: ''
+            timezone: ""
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           entity_type: commerce_order_report
           entity_field: created
@@ -1444,61 +1444,61 @@ display:
           field: report_id
           relationship: none
           group_type: count
-          admin_label: ''
-          label: '# of Orders'
+          admin_label: ""
+          label: "# of Orders"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           click_sort_column: value
           type: number_integer
-          settings: {  }
+          settings: {}
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -1515,61 +1515,61 @@ display:
           field: amount
           relationship: none
           group_type: sum
-          admin_label: ''
-          label: 'Total Revenue'
+          admin_label: ""
+          label: "Total Revenue"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -1584,61 +1584,61 @@ display:
           field: amount
           relationship: none
           group_type: avg
-          admin_label: ''
-          label: 'Average Order'
+          admin_label: ""
+          label: "Average Order"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -1654,11 +1654,11 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: true
           expose:
-            label: 'Order date'
+            label: "Order date"
           granularity: week
           entity_type: commerce_order_report
           entity_field: created
@@ -1675,26 +1675,26 @@ display:
           plugin_id: commerce_entity_bundle
           expose:
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
         created:
           id: created
           table: commerce_order_report
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           operator: between
           value:
-            min: '-10 years'
-            max: 'last day of this year'
-            value: ''
+            min: "-10 years"
+            max: "last day of this year"
+            value: ""
             type: offset
           group: 1
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Order date'
-            description: ''
+            label: "Order date"
+            description: ""
             use_operator: false
             operator: created_op
             identifier: date
@@ -1703,25 +1703,25 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
+              anonymous: "0"
+              administrator: "0"
+            placeholder: ""
+            min_placeholder: ""
+            max_placeholder: ""
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: ""
+            description: ""
+            identifier: ""
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+            default_group_multiple: {}
+            group_items: {}
           entity_type: commerce_order_report
           entity_field: created
           plugin_id: date
@@ -1737,45 +1737,45 @@ display:
       include_query_params: false
       displays:
         weekly: weekly
-        default: '0'
-        daily: '0'
-        monthly: '0'
-        yearly: '0'
+        default: "0"
+        daily: "0"
+        monthly: "0"
+        yearly: "0"
       style:
         type: data_export
         options:
           formats:
             csv: csv
           csv_settings:
-            delimiter: ','
+            delimiter: ","
             enclosure: '"'
             escape_char: \
             strip_tags: true
             trim: true
             encoding: utf8
-            utf8_bom: '0'
+            utf8_bom: "0"
             use_serializer_encode_only: false
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - request_format
         - url
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
+        - "url.query_args:sort_by"
+        - "url.query_args:sort_order"
         - user.permissions
-      tags: {  }
+      tags: {}
   data_export_yearly:
     display_plugin: data_export
     id: data_export_yearly
-    display_title: 'Yearly - Data export'
+    display_title: "Yearly - Data export"
     position: 2
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
-      display_description: ''
-      title: 'Yearly sales report'
+        metatag_display_extender: {}
+      display_description: ""
+      title: "Yearly sales report"
       defaults:
         title: false
         fields: false
@@ -1790,45 +1790,45 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Date
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -1836,17 +1836,17 @@ display:
           type: timestamp
           settings:
             date_format: html_year
-            custom_date_format: ''
-            timezone: ''
+            custom_date_format: ""
+            timezone: ""
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           entity_type: commerce_order_report
           entity_field: created
@@ -1857,61 +1857,61 @@ display:
           field: report_id
           relationship: none
           group_type: count
-          admin_label: ''
-          label: '# of Orders'
+          admin_label: ""
+          label: "# of Orders"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           click_sort_column: value
           type: number_integer
-          settings: {  }
+          settings: {}
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -1928,61 +1928,61 @@ display:
           field: amount
           relationship: none
           group_type: sum
-          admin_label: ''
-          label: 'Total Revenue'
+          admin_label: ""
+          label: "Total Revenue"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -1997,61 +1997,61 @@ display:
           field: amount
           relationship: none
           group_type: avg
-          admin_label: ''
-          label: 'Average Order'
+          admin_label: ""
+          label: "Average Order"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -2067,11 +2067,11 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: true
           expose:
-            label: 'Order date'
+            label: "Order date"
           granularity: year
           entity_type: commerce_order_report
           entity_field: created
@@ -2088,26 +2088,26 @@ display:
           plugin_id: commerce_entity_bundle
           expose:
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
         created:
           id: created
           table: commerce_order_report
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           operator: between
           value:
-            min: '-10 years'
-            max: 'last day of this year'
-            value: ''
+            min: "-10 years"
+            max: "last day of this year"
+            value: ""
             type: offset
           group: 1
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Order date'
-            description: ''
+            label: "Order date"
+            description: ""
             use_operator: false
             operator: created_op
             identifier: date
@@ -2116,25 +2116,25 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
+              anonymous: "0"
+              administrator: "0"
+            placeholder: ""
+            min_placeholder: ""
+            max_placeholder: ""
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: ""
+            description: ""
+            identifier: ""
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+            default_group_multiple: {}
+            group_items: {}
           entity_type: commerce_order_report
           entity_field: created
           plugin_id: date
@@ -2150,35 +2150,35 @@ display:
       include_query_params: false
       displays:
         yearly: yearly
-        default: '0'
-        daily: '0'
-        monthly: '0'
-        weekly: '0'
+        default: "0"
+        daily: "0"
+        monthly: "0"
+        weekly: "0"
       style:
         type: data_export
         options:
           formats:
             csv: csv
           csv_settings:
-            delimiter: ','
+            delimiter: ","
             enclosure: '"'
             escape_char: \
             strip_tags: true
             trim: true
             encoding: utf8
-            utf8_bom: '0'
+            utf8_bom: "0"
             use_serializer_encode_only: false
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - request_format
         - url
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
+        - "url.query_args:sort_by"
+        - "url.query_args:sort_order"
         - user.permissions
-      tags: {  }
+      tags: {}
   monthly:
     display_plugin: page
     id: monthly
@@ -2186,22 +2186,22 @@ display:
     position: 1
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender: {}
       path: admin/commerce/reports/sales
       menu:
-        type: 'default tab'
+        type: "default tab"
         title: Monthly
-        description: 'View monthly sales'
+        description: "View monthly sales"
         expanded: false
         parent: commerce_reports.overview
         weight: 0
-        context: '0'
+        context: "0"
         menu_name: admin
-      display_description: ''
+      display_description: ""
       tab_options:
         type: none
         title: Sales
-        description: ''
+        description: ""
         weight: 0
       exposed_form:
         type: bef
@@ -2209,11 +2209,11 @@ display:
           submit_button: Apply
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: "Sort by"
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required: "Select any filter and click on Apply to see results"
           text_input_required_format: full_html
           bef:
             general:
@@ -2223,7 +2223,7 @@ display:
               autosubmit_hide: false
               input_required: false
               allow_secondary: false
-              secondary_label: 'Advanced options'
+              secondary_label: "Advanced options"
               secondary_open: false
             filter:
               created:
@@ -2238,20 +2238,20 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - url
         - user.permissions
-      tags: {  }
+      tags: {}
   weekly:
     display_plugin: page
     id: weekly
     display_title: Weekly
     position: 2
     display_options:
-      display_extenders: {  }
-      display_description: ''
-      title: 'Weekly sales report'
+      display_extenders: {}
+      display_description: ""
+      title: "Weekly sales report"
       defaults:
         title: false
         fields: false
@@ -2262,11 +2262,11 @@ display:
       menu:
         type: tab
         title: Weekly
-        description: ''
+        description: ""
         expanded: false
         parent: commerce_reports.overview
         weight: 5
-        context: '0'
+        context: "0"
         menu_name: admin
       fields:
         created:
@@ -2275,45 +2275,45 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Date
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -2322,16 +2322,16 @@ display:
           settings:
             date_format: custom
             custom_date_format: Y-W
-            timezone: ''
+            timezone: ""
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           entity_type: commerce_order_report
           entity_field: created
@@ -2342,61 +2342,61 @@ display:
           field: report_id
           relationship: none
           group_type: count
-          admin_label: ''
-          label: '# of Orders'
+          admin_label: ""
+          label: "# of Orders"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           click_sort_column: value
           type: number_integer
-          settings: {  }
+          settings: {}
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -2413,61 +2413,61 @@ display:
           field: amount
           relationship: none
           group_type: sum
-          admin_label: ''
-          label: 'Total Revenue'
+          admin_label: ""
+          label: "Total Revenue"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -2482,61 +2482,61 @@ display:
           field: amount
           relationship: none
           group_type: avg
-          admin_label: ''
-          label: 'Average Order'
+          admin_label: ""
+          label: "Average Order"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -2552,11 +2552,11 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: true
           expose:
-            label: 'Order date'
+            label: "Order date"
           granularity: week
           entity_type: commerce_order_report
           entity_field: created
@@ -2573,57 +2573,57 @@ display:
           plugin_id: commerce_entity_bundle
           expose:
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
         created:
           id: created
           table: commerce_order_report
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           operator: between
           value:
-            min: ''
-            max: ''
-            value: ''
+            min: ""
+            max: ""
+            value: ""
             type: date
           group: 1
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Order date'
-            description: ''
+            label: "Order date"
+            description: ""
             use_operator: false
             operator: created_op
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
             identifier: date
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              content_admin: '0'
-              seo_admin: '0'
-              site_admin: '0'
-              administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
+              anonymous: "0"
+              editor: "0"
+              content_admin: "0"
+              seo_admin: "0"
+              site_admin: "0"
+              administrator: "0"
+            placeholder: ""
+            min_placeholder: ""
+            max_placeholder: ""
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: ""
+            description: ""
+            identifier: ""
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+            default_group_multiple: {}
+            group_items: {}
           entity_type: commerce_order_report
           entity_field: created
           plugin_id: date
@@ -2634,13 +2634,13 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - url
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
+        - "url.query_args:sort_by"
+        - "url.query_args:sort_order"
         - user.permissions
-      tags: {  }
+      tags: {}
   yearly:
     display_plugin: page
     id: yearly
@@ -2648,9 +2648,9 @@ display:
     position: 2
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
-      display_description: ''
-      title: 'Yearly sales report'
+        metatag_display_extender: {}
+      display_description: ""
+      title: "Yearly sales report"
       defaults:
         title: false
         fields: false
@@ -2661,11 +2661,11 @@ display:
       menu:
         type: tab
         title: Yearly
-        description: ''
+        description: ""
         expanded: false
         parent: commerce_reports.overview
         weight: -10
-        context: '0'
+        context: "0"
         menu_name: admin
       fields:
         created:
@@ -2674,45 +2674,45 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           label: Date
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -2720,17 +2720,17 @@ display:
           type: timestamp
           settings:
             date_format: html_year
-            custom_date_format: ''
-            timezone: ''
+            custom_date_format: ""
+            timezone: ""
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ", "
           field_api_classes: false
           entity_type: commerce_order_report
           entity_field: created
@@ -2741,61 +2741,61 @@ display:
           field: report_id
           relationship: none
           group_type: count
-          admin_label: ''
-          label: '# of Orders'
+          admin_label: ""
+          label: "# of Orders"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ','
+          separator: ","
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
+          prefix: ""
+          suffix: ""
           click_sort_column: value
           type: number_integer
-          settings: {  }
+          settings: {}
           group_column: value
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -2812,61 +2812,61 @@ display:
           field: amount
           relationship: none
           group_type: sum
-          admin_label: ''
-          label: 'Total Revenue'
+          admin_label: ""
+          label: "Total Revenue"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -2881,61 +2881,61 @@ display:
           field: amount
           relationship: none
           group_type: avg
-          admin_label: ''
-          label: 'Average Order'
+          admin_label: ""
+          label: "Average Order"
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: ""
             make_link: false
-            path: ''
+            path: ""
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
+            alt: ""
+            rel: ""
+            link_class: ""
+            prefix: ""
+            suffix: ""
+            target: ""
             nl2br: false
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            more_link_text: ""
+            more_link_path: ""
             strip_tags: false
             trim: false
-            preserve_tags: ''
+            preserve_tags: ""
             html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
+          element_type: ""
+          element_class: ""
+          element_label_type: ""
+          element_label_class: ""
           element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: ""
+          element_wrapper_class: ""
           element_default_classes: true
-          empty: ''
+          empty: ""
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           set_precision: false
           precision: 0
           decimal: .
-          separator: ', '
+          separator: ", "
           format_plural: 0
           format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          click_sort_column: ''
+          prefix: ""
+          suffix: ""
+          click_sort_column: ""
           type: commerce_price_default
-          settings: {  }
+          settings: {}
           group_column: entity_id
-          group_columns: {  }
+          group_columns: {}
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -2951,11 +2951,11 @@ display:
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           order: DESC
           exposed: true
           expose:
-            label: 'Order date'
+            label: "Order date"
           granularity: year
           entity_type: commerce_order_report
           entity_field: created
@@ -2972,57 +2972,57 @@ display:
           plugin_id: commerce_entity_bundle
           expose:
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
         created:
           id: created
           table: commerce_order_report
           field: created
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: ""
           operator: between
           value:
-            min: ''
-            max: ''
-            value: ''
+            min: ""
+            max: ""
+            value: ""
             type: date
           group: 1
           exposed: true
           expose:
             operator_id: created_op
-            label: 'Order date'
-            description: ''
+            label: "Order date"
+            description: ""
             use_operator: false
             operator: created_op
             operator_limit_selection: false
-            operator_list: {  }
+            operator_list: {}
             identifier: date
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              content_admin: '0'
-              seo_admin: '0'
-              site_admin: '0'
-              administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
+              anonymous: "0"
+              editor: "0"
+              content_admin: "0"
+              seo_admin: "0"
+              site_admin: "0"
+              administrator: "0"
+            placeholder: ""
+            min_placeholder: ""
+            max_placeholder: ""
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: ""
+            description: ""
+            identifier: ""
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+            default_group_multiple: {}
+            group_items: {}
           entity_type: commerce_order_report
           entity_field: created
           plugin_id: date
@@ -3033,10 +3033,10 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
+        - "languages:language_content"
+        - "languages:language_interface"
         - url
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
+        - "url.query_args:sort_by"
+        - "url.query_args:sort_order"
         - user.permissions
-      tags: {  }
+      tags: {}

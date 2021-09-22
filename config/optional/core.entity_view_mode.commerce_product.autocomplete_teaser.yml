@@ -4,6 +4,6 @@ dependencies:
   module:
     - commerce_product
 id: commerce_product.autocomplete_teaser
-label: 'Autocomplete teaser'
+label: "Autocomplete teaser"
 targetEntityType: commerce_product
 cache: true

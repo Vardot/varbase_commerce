@@ -11,10 +11,10 @@ field_name: weight
 entity_type: commerce_product_variation
 bundle: physical
 label: Weight
-description: ''
+description: ""
 required: true
 translatable: false
-default_value: {  }
+default_value: {}
 default_value_callback: null
-settings: {  }
+settings: {}
 field_type: physical_measurement

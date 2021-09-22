@@ -19,8 +19,8 @@ content:
     weight: 1
     region: content
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
   field_rating:
     type: fivestar_stars
     weight: 0
@@ -35,9 +35,9 @@ content:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
 hidden:
   comment_body: true
   langcode: true

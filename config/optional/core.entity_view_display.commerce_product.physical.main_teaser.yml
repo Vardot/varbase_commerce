@@ -25,14 +25,14 @@ content:
     label: hidden
     type: text_default
     weight: 3
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     region: content
   flag_wishlist:
     weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
   title:
     label: hidden
     type: string
@@ -40,7 +40,7 @@ content:
     region: content
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings: {}
   variations:
     type: commerce_add_to_cart
     weight: 1
@@ -48,7 +48,7 @@ content:
     label: above
     settings:
       combine: true
-    third_party_settings: {  }
+    third_party_settings: {}
 hidden:
   created: true
   feeds_item: true

@@ -9,10 +9,10 @@ field_name: field_label
 entity_type: commerce_product_attribute_value
 bundle: color
 label: Label
-description: 'Label displayed for the customer'
+description: "Label displayed for the customer"
 required: false
 translatable: true
-default_value: {  }
-default_value_callback: ''
-settings: {  }
+default_value: {}
+default_value_callback: ""
+settings: {}
 field_type: string

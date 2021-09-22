@@ -10,12 +10,12 @@ id: commerce_product.physical.field_product_rating
 field_name: field_product_rating
 entity_type: commerce_product
 bundle: physical
-label: 'Product rating'
-description: ''
+label: "Product rating"
+description: ""
 required: false
 translatable: false
-default_value: {  }
-default_value_callback: ''
+default_value: {}
+default_value_callback: ""
 settings:
   stars: 5
   allow_clear: false
@@ -23,6 +23,6 @@ settings:
   allow_ownvote: true
   rated_while: editing
   enable_voting_target: false
-  target_bridge_field: ''
-  target_fivestar_field: ''
+  target_bridge_field: ""
+  target_fivestar_field: ""
 field_type: fivestar

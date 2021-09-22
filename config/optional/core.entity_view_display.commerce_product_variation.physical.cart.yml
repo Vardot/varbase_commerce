@@ -29,7 +29,7 @@ content:
     label: hidden
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings: {}
   attribute_size:
     type: entity_reference_label
     weight: 7
@@ -42,9 +42,9 @@ content:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: true
-            classes: {  }
+            classes: {}
   field_images:
     type: entity_reference_label
     weight: 1
@@ -52,7 +52,7 @@ content:
     label: hidden
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings: {}
   list_price:
     label: hidden
     type: commerce_price_calculated
@@ -62,19 +62,19 @@ content:
       currency_display: symbol
       adjustment_types:
         tax: tax
-        fee: '0'
-        promotion: '0'
-        shipping: '0'
-        shipping_promotion: '0'
+        fee: "0"
+        promotion: "0"
+        shipping: "0"
+        shipping_promotion: "0"
       strip_trailing_zeroes: false
     third_party_settings:
       ds:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
   price:
     label: hidden
     type: commerce_price_calculated
@@ -84,19 +84,19 @@ content:
       currency_display: symbol
       adjustment_types:
         tax: tax
-        fee: '0'
-        promotion: '0'
-        shipping: '0'
-        shipping_promotion: '0'
+        fee: "0"
+        promotion: "0"
+        shipping: "0"
+        shipping_promotion: "0"
       strip_trailing_zeroes: false
     third_party_settings:
       ds:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
   product_id:
     type: entity_reference_label
     weight: 8
@@ -109,9 +109,9 @@ content:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
   title:
     type: string
     weight: 0
@@ -124,9 +124,9 @@ content:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: true
-            classes: {  }
+            classes: {}
 hidden:
   field_stock: true
   langcode: true

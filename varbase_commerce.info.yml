@@ -1,6 +1,6 @@
-name: 'Varbase Commerce'
+name: "Varbase Commerce"
 type: module
-description: 'Provides a starting point for Varbase merchandise section and the products catalog.'
+description: "Provides a starting point for Varbase merchandise section and the products catalog."
 package: Varbase
 core_version_requirement: ^8 || ^9
 dependencies:

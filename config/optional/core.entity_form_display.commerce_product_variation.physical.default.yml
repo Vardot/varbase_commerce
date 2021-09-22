@@ -19,13 +19,13 @@ third_party_settings:
         - group_basic_info
         - group_media
         - group_attributes
-      parent_name: ''
+      parent_name: ""
       weight: 0
       format_type: tabs
       region: content
       format_settings:
-        id: ''
-        classes: ''
+        id: ""
+        classes: ""
         direction: horizontal
       label: Tabs
     group_basic_info:
@@ -39,12 +39,12 @@ third_party_settings:
       format_type: tab
       region: content
       format_settings:
-        description: ''
+        description: ""
         formatter: open
         required_fields: true
-        id: ''
-        classes: ''
-      label: 'Basic information'
+        id: ""
+        classes: ""
+      label: "Basic information"
     group_attributes:
       children:
         - attribute_color
@@ -54,9 +54,9 @@ third_party_settings:
       format_type: tab
       region: content
       format_settings:
-        id: ''
-        classes: ''
-        description: ''
+        id: ""
+        classes: ""
+        description: ""
         formatter: closed
         required_fields: true
       label: Attributes
@@ -68,9 +68,9 @@ third_party_settings:
       format_type: tab
       region: content
       format_settings:
-        id: ''
-        classes: ''
-        description: ''
+        id: ""
+        classes: ""
+        description: ""
         formatter: closed
         required_fields: true
       label: Media
@@ -82,27 +82,27 @@ content:
   attribute_color:
     type: options_select
     weight: 5
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     region: content
   attribute_size:
     type: options_select
     weight: 6
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     region: content
   field_images:
     type: media_library_widget
     weight: 7
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types: {}
+    third_party_settings: {}
     region: content
   field_stock:
     weight: 7
     settings:
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
     type: number
     region: content
   langcode:
@@ -111,34 +111,34 @@ content:
     region: content
     settings:
       include_locked: true
-    third_party_settings: {  }
+    third_party_settings: {}
   list_price:
     type: commerce_list_price
     weight: 5
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
   price:
     type: commerce_price_default
     weight: 6
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
   sku:
     type: string_textfield
     weight: 4
     region: content
     settings:
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
   status:
     type: boolean_checkbox
     settings:
       display_label: true
     weight: 2
     region: content
-    third_party_settings: {  }
+    third_party_settings: {}
 hidden:
   created: true
   title: true

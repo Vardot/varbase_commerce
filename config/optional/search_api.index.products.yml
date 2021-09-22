@@ -46,26 +46,26 @@ third_party_settings:
       slop: 10000000
       fuzzy: 2
     advanced:
-      index_prefix: ''
-      collection: ''
-      timezone: ''
+      index_prefix: ""
+      collection: ""
+      timezone: ""
 id: products
 name: Products
-description: ''
+description: ""
 read_only: false
 field_settings:
   body:
     label: Body
-    datasource_id: 'entity:commerce_product'
+    datasource_id: "entity:commerce_product"
     property_path: body
-    type: 'solr_text_custom:ngram'
+    type: "solr_text_custom:ngram"
     boost: 0.3
     dependencies:
       config:
         - field.storage.commerce_product.body
   body_spellcheck:
     label: Body
-    datasource_id: 'entity:commerce_product'
+    datasource_id: "entity:commerce_product"
     property_path: body
     type: solr_text_spellcheck
     boost: 0.3
@@ -74,7 +74,7 @@ field_settings:
         - field.storage.commerce_product.body
   created:
     label: Created
-    datasource_id: 'entity:commerce_product'
+    datasource_id: "entity:commerce_product"
     property_path: created
     type: date
     dependencies:
@@ -82,7 +82,7 @@ field_settings:
         - commerce_product
   field_category:
     label: Category
-    datasource_id: 'entity:commerce_product'
+    datasource_id: "entity:commerce_product"
     property_path: field_category
     type: integer
     dependencies:
@@ -90,49 +90,49 @@ field_settings:
         - field.storage.commerce_product.field_category
   field_category_fulltext:
     label: Category
-    datasource_id: 'entity:commerce_product'
+    datasource_id: "entity:commerce_product"
     property_path: field_category
-    type: 'solr_text_custom:ngram'
+    type: "solr_text_custom:ngram"
     boost: 0.5
     dependencies:
       config:
         - field.storage.commerce_product.field_category
   number:
-    label: 'Variations » Product variation » Price » Number'
-    datasource_id: 'entity:commerce_product'
-    property_path: 'variations:entity:price:number'
+    label: "Variations » Product variation » Price » Number"
+    datasource_id: "entity:commerce_product"
+    property_path: "variations:entity:price:number"
     type: integer
     dependencies:
       module:
         - commerce_product
   title:
     label: Title
-    datasource_id: 'entity:commerce_product'
+    datasource_id: "entity:commerce_product"
     property_path: title
-    type: 'solr_text_custom:ngram'
+    type: "solr_text_custom:ngram"
     boost: !!float 21
     dependencies:
       module:
         - commerce_product
   title_spellcheck:
     label: Title
-    datasource_id: 'entity:commerce_product'
+    datasource_id: "entity:commerce_product"
     property_path: title
     type: solr_text_spellcheck
     dependencies:
       module:
         - commerce_product
 datasource_settings:
-  'entity:commerce_product':
+  "entity:commerce_product":
     bundles:
       default: true
-      selected: {  }
+      selected: {}
     languages:
       default: true
-      selected: {  }
+      selected: {}
 processor_settings:
-  add_url: {  }
-  aggregated_field: {  }
+  add_url: {}
+  aggregated_field: {}
   double_quote_workaround:
     all_fields: true
     fields:
@@ -140,12 +140,12 @@ processor_settings:
       - body_spellcheck
       - title
       - title_spellcheck
-    replacement: '|9999999998|'
+    replacement: "|9999999998|"
     weights:
       postprocess_query: 0
       preprocess_index: -50
       preprocess_query: -15
-  entity_status: {  }
+  entity_status: {}
   hierarchy:
     fields:
       field_category: taxonomy_term-parent
@@ -179,7 +179,7 @@ processor_settings:
       - field_category_fulltext
       - title
       - title_spellcheck
-    ignorable: '[''¿¡!?,.:;]'
+    ignorable: "['¿¡!?,.:;]"
     ignorable_classes:
       - Pc
       - Pd
@@ -191,9 +191,9 @@ processor_settings:
     weights:
       preprocess_index: -48
       preprocess_query: -10
-  language_with_fallback: {  }
-  rendered_item: {  }
-  reverse_entity_references: {  }
+  language_with_fallback: {}
+  rendered_item: {}
+  reverse_entity_references: {}
   solr_date_range:
     weights:
       preprocess_index: 0
@@ -203,4 +203,4 @@ tracker_settings:
 options:
   index_directly: true
   cron_limit: 50
-server: ''
+server: ""

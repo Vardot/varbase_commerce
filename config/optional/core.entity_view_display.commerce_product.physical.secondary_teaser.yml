@@ -43,9 +43,9 @@ content:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
     region: content
   title:
     label: hidden
@@ -54,7 +54,7 @@ content:
     region: content
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings: {}
 hidden:
   created: true
   feeds_item: true

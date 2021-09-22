@@ -14,16 +14,16 @@ mode: default
 content:
   field_color:
     weight: 1
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     type: color_field_widget_html5
     region: content
   field_label:
     weight: 2
     settings:
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
     type: string_textfield
     region: content
   langcode:
@@ -32,13 +32,13 @@ content:
     region: content
     settings:
       include_locked: true
-    third_party_settings: {  }
+    third_party_settings: {}
   name:
     type: string_textfield
     weight: 0
     region: content
     settings:
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
-hidden: {  }
+      placeholder: ""
+    third_party_settings: {}
+hidden: {}

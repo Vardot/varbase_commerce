@@ -17,8 +17,8 @@ content:
     weight: 2
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
     type: string_textarea
     region: content
   field_rating:
@@ -27,7 +27,7 @@ content:
       fivestar_widget: basic
       display_format: average
       text_format: none
-    third_party_settings: {  }
+    third_party_settings: {}
     type: fivestar_stars
     region: content
   subject:
@@ -36,8 +36,8 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
+      placeholder: ""
+    third_party_settings: {}
 hidden:
   author: true
   comment_body: true

@@ -10,19 +10,18 @@ id: commerce_product.physical.field_product_reviews
 field_name: field_product_reviews
 entity_type: commerce_product
 bundle: physical
-label: 'Product Reviews'
-description: ''
+label: "Product Reviews"
+description: ""
 required: false
 translatable: false
 default_value:
-  -
-    status: 2
+  - status: 2
     cid: 0
     last_comment_timestamp: 0
     last_comment_name: null
     last_comment_uid: 0
     comment_count: 0
-default_value_callback: ''
+default_value_callback: ""
 settings:
   default_mode: 1
   per_page: 5

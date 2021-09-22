@@ -1,6 +1,6 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies: {}
 id: size
 label: Size
 elementType: commerce_product_rendered_attribute

@@ -23,8 +23,8 @@ content:
     label: above
     type: text_default
     weight: 3
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
     region: content
   field_product_rating:
     weight: 5
@@ -38,9 +38,9 @@ content:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
     type: fivestar_stars
     region: content
   field_product_reviews:
@@ -54,16 +54,16 @@ content:
         ft:
           id: default
           settings:
-            lb: ''
+            lb: ""
             lb-col: false
-            classes: {  }
+            classes: {}
     type: comment_default
     region: content
   flag_wishlist:
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
   title:
     label: hidden
     type: string
@@ -71,14 +71,14 @@ content:
     region: content
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings: {}
   variations:
     type: commerce_cart_flyout_add_to_cart
     weight: 2
     region: content
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    settings: {}
+    third_party_settings: {}
 hidden:
   created: true
   feeds_item: true

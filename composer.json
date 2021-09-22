@@ -21,6 +21,7 @@
     "oomphinc/composer-installers-extender": "~1.0 || ~2.0",
     "cweagans/composer-patches": "~1.0",
     "drupal/core": "~8.9 || ~9",
+    "vardot/entity-definition-update-manager": "~1.0",
     "drupal/commerce": "~2.0",
     "drupal/commerce_shipping": "2.1",
     "drupal/commerce_simple_stock": "~1.0",

@@ -23,7 +23,7 @@
     "drupal/core": "~8.9 || ~9",
     "vardot/entity-definition-update-manager": "~1.0",
     "drupal/commerce": "~2.0",
-    "drupal/commerce_shipping": "2.1",
+    "drupal/commerce_shipping": "2.4",
     "drupal/commerce_simple_stock": "~1.0",
     "drupal/commerce_reports": "~1.0",
     "drupal/commerce_cart_flyout": "1.8",
@@ -49,9 +49,7 @@
         "Issue #3170419: Move all Shipping Conditions to the Shipping Category":
         "https://www.drupal.org/files/issues/2020-09-24/commerce_shipping-Shipping_Conditions_Category-3170419-2.patch",
         "Issue #3067035: Provide shipping_address condition for the commerce_order entity type":
-        "https://www.drupal.org/files/issues/2020-09-24/commerce_shipping-Shipping_Address_condtion-3067035-4.patch",
-        "Issue #2976252: Provide billing by shipping condition":
-        "https://www.drupal.org/files/issues/2021-07-13/provide_shipping_condition-2976252-17.patch"
+        "https://www.drupal.org/files/issues/2020-09-24/commerce_shipping-Shipping_Address_condtion-3067035-4.patch"
       },
       "drupal/commerce_cart_flyout": {
         "Issue #3069639: Disable typeof-symbol transform for IE11 support when using typeof":

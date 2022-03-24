@@ -30,7 +30,7 @@
     "drupal/commerce_wishlist":"~3.0",
     "drupal/search_api": "~1.0",
     "drupal/search_api_autocomplete": "~1.0",
-    "drupal/facets": "~1.0",
+    "drupal/facets": "~2.0",
     "drupal/facets_block": "~1.0",
     "drupal/better_exposed_filters": "~5.0",
     "drupal/fivestar": "~1.0",

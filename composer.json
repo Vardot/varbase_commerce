@@ -17,12 +17,12 @@
     "source": "http://cgit.drupalcode.org/varbase_commerce"
   },
   "require": {
-    "composer/installers": "~2.0",
-    "oomphinc/composer-installers-extender": "~2.0",
-    "cweagans/composer-patches": "~1.0",
-    "drupal/core": "~9.5.0 || ~10.1.0",
-    "vardot/entity-definition-update-manager": "~1.0",
-    "vardot/module-installer-factory": "~1.0",
+    "composer/installers": "~2",
+    "oomphinc/composer-installers-extender": "~2",
+    "cweagans/composer-patches": "~1",
+    "drupal/core": "~9.5.0 || ~10",
+    "vardot/entity-definition-update-manager": "~1",
+    "vardot/module-installer-factory": "~1",
     "drupal/commerce": "~2.0",
     "drupal/commerce_shipping": "2.3",
     "drupal/commerce_simple_stock": "~1.0",

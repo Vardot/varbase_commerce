@@ -32,7 +32,7 @@
     "drupal/search_api": "~1",
     "drupal/search_api_autocomplete": "~1",
     "drupal/facets": "~2",
-    "drupal/facets_block": "~1",
+    "drupal/facets_block": "~2",
     "drupal/better_exposed_filters": "~6",
     "drupal/fivestar": "~1",
     "drupal/color_field": "~2",

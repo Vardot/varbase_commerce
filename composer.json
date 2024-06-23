@@ -56,7 +56,7 @@
         "Issue #3056466: Always open cart flyout":
         "https://www.drupal.org/files/issues/2020-07-07/always_open_cart_flyout-3056466-4.patch",
         "Issue #3144651: Add quantity to form":
-        "https://www.drupal.org/files/issues/2021-01-11/add-quantity-field_3144651_4.patch"
+        "https://www.drupal.org/files/issues/2024-06-23/commerce_cart_flyout--2024-06-23--3144651-9.patch"
       }
     }
   }

@@ -20,7 +20,7 @@
     "composer/installers": "~2",
     "oomphinc/composer-installers-extender": "~2",
     "cweagans/composer-patches": "~1 || ~2",
-    "drupal/core": "~10.3.0 || ~11.0.0",
+    "drupal/core": "~10.4.0 || ~11.1.0",
     "vardot/entity-definition-update-manager": "~1",
     "vardot/module-installer-factory": "~1",
     "drupal/commerce": "~2",

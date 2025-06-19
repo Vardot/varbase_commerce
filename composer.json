@@ -17,12 +17,7 @@
     "source": "http://cgit.drupalcode.org/varbase_commerce"
   },
   "require": {
-    "composer/installers": "~2",
-    "oomphinc/composer-installers-extender": "~2",
-    "cweagans/composer-patches": "~1 || ~2",
-    "drupal/core": "~10.4.0 || ~11.1.0",
-    "vardot/entity-definition-update-manager": "~1",
-    "vardot/module-installer-factory": "~1",
+    "drupal/core": "~10.5.0 || ~11.2.0",
     "drupal/commerce": "~2",
     "drupal/commerce_shipping": "~2",
     "drupal/commerce_simple_stock": "~1",

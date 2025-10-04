@@ -5,10 +5,6 @@
  * Contains install and update for Varbase Media module.
  */
 
-use Symfony\Component\Yaml\Yaml;
-use Drupal\Core\Config\InstallStorage;
-use Drupal\Core\Config\StorageInterface;
-use Drupal\Core\Config\FileStorage;
 use Vardot\Entity\EntityDefinitionUpdateManager;
 use Vardot\Installer\ModuleInstallerFactory;
 
@@ -17,7 +13,7 @@ use Vardot\Installer\ModuleInstallerFactory;
  */
 function varbase_commerce_install() {
 
-  // Processer for install: in varbase_admin.info.yml file.
+  // Processor for install: in varbase_admin.info.yml file.
   // ---------------------------------------------------------------------------.
   ModuleInstallerFactory::installList('varbase_commerce');
 

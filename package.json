@@ -1,11 +1,11 @@
 {
   "name": "varbase_commerce",
+  "license": "GPL-2.0-or-later",
   "private": true,
   "description": "Provides a starting point for Varbase merchandise section and the products catalog.",
-  "license": "GPL-2.0",
   "engines": {
-    "yarn": ">= 1.6",
-    "node": ">= 18.0"
+    "yarn": ">= 4.9.3",
+    "node": ">= 20.0"
   },
   "keywords": [
     "Drupal",
@@ -14,24 +14,21 @@
     "Open API"
   ],
   "author": "Vardot",
+  "packageManager": "yarn@4.9.3",
   "scripts": {
     "phpcs": "phpcs --standard=./.phpcs.xml .",
     "phpcbf": "phpcbf --standard=./.phpcs.xml .",
-    "lint:yaml": "node ./node_modules/eslint/bin/eslint.js --config=.eslintrc.json --ext .yml ."
+    "lint:yaml": "node ./node_modules/eslint/bin/eslint.js --config=.eslintrc.json --ext .yml .",
+    "spellcheck": "cspell lint ."
   },
-  "dependencies": {  },
-  "devDependencies": { 
-    "eslint": "^8.9.0",
+  "devDependencies": {
+    "cspell": "^9.2.1",
+    "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.4.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jquery": "^1.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-yml": "^0.14.0",
-    "eslint-plugin-jsx-a11y": "~6",
-    "eslint-plugin-react": "~7",
-    "eslint-plugin-react-hooks": "~4",
-    "prettier": "~2"
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-yml": "^1.15.0",
+    "prettier": "^3.6.2"
   }
 }
-

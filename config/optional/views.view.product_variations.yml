@@ -387,7 +387,7 @@ display:
       arguments: {}
       display_extenders:
         metatag_display_extender: {}
-      title: "Featuerd Variations"
+      title: "Featured Variations"
       use_more: false
       use_more_always: false
       use_more_text: ""

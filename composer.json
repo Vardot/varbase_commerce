@@ -16,7 +16,7 @@
     "source": "http://cgit.drupalcode.org/varbase_commerce"
   },
   "require": {
-    "drupal/core": "~10.5.0 || ~11.2.0",
+    "drupal/core": "~10.6.0 || ~11.3.0",
     "drupal/commerce": "~2",
     "drupal/commerce_shipping": "~2",
     "drupal/commerce_simple_stock": "~1",

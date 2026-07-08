@@ -1,0 +1,8 @@
+name: 'Varbase Commerce Test'
+description: 'Grants anonymous visitors access to view products so the Varbase Commerce catalog (/search) is reachable in the browser tests. The Commerce Core stack + Varbase Commerce are enabled by the module default recipe applied first in the CI.'
+type: 'Testing'
+config:
+  actions:
+    user.role.anonymous:
+      grantPermissions:
+        - 'view commerce_product'

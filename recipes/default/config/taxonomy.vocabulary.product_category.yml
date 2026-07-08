@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {}
+name: "Product category"
+vid: product_category
+description: 'Provided by the Varbase Commerce merchandise section.'
+weight: 0

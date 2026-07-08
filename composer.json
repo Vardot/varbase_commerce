@@ -16,42 +16,31 @@
     "source": "http://cgit.drupalcode.org/varbase_commerce"
   },
   "require": {
-    "drupal/core": "~10.6.0 || ~11.3.0",
-    "drupal/commerce": "~2",
-    "drupal/commerce_shipping": "~2",
-    "drupal/commerce_simple_stock": "~1",
-    "drupal/commerce_reports": "~1",
-    "drupal/commerce_cart_flyout": "~1",
-    "drupal/commerce_wishlist":"~3",
+    "drupal/core": "~11.4.0",
+    "drupal/commerce": "~3",
+    "drupal/commerce_shipping": "~3",
+    "drupal/commerce_wishlist": "~3",
     "drupal/search_api": "~1",
     "drupal/search_api_autocomplete": "~1",
     "drupal/facets": "~2",
     "drupal/facets_block": "~2",
-    "drupal/better_exposed_filters": "~6",
-    "drupal/fivestar": "~1",
-    "drupal/color_field": "~2 || ~3",
+    "drupal/better_exposed_filters": "~7",
+    "drupal/fivestar": "~3",
+    "drupal/color_field": "~3",
     "drupal/term_reference_tree": "~2",
     "drupal/views_data_export": "~1",
     "drupal/colorbox": "~2",
     "drupal/entityqueue": "~1",
-    "drupal/flag": "~4"
-  },
-  "extra": {
-    "enable-patching": true,
-    "composer-exit-on-patch-failure": true,
-    "patches": {
-      "drupal/commerce_shipping": {
-        "Issue #3170419: Move all Shipping Conditions to the Shipping Category":
-        "https://www.drupal.org/files/issues/2020-09-24/commerce_shipping-Shipping_Conditions_Category-3170419-2.patch"
-      },
-      "drupal/commerce_cart_flyout": {
-        "Issue #3075270: Consider Separating count_text into two values":
-        "https://www.drupal.org/files/issues/2020-04-30/consider-separate-count_text-into-two-values-3075270-2.patch",
-        "Issue #3056466: Always open cart flyout":
-        "https://www.drupal.org/files/issues/2020-07-07/always_open_cart_flyout-3056466-4.patch",
-        "Issue #3144651: Add quantity to form":
-        "https://www.drupal.org/files/issues/2024-06-23/commerce_cart_flyout--2024-06-23--3144651-9.patch"
-      }
-    }
+    "drupal/flag": "~5",
+    "vardot/module-installer-factory": "~1",
+    "vardot/entity-definition-update-manager": "~1",
+    "drupal/smart_trim": "~2",
+    "drupal/slick": "~3",
+    "drupal/slick_views": "~3",
+    "drupal/allowed_formats": "~3",
+    "drupal/entity_browser": "~2",
+    "drupal/inline_entity_form": "~3",
+    "drupal/field_group": "~4",
+    "drupal/views_infinite_scroll": "~2"
   }
 }

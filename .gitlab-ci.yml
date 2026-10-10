@@ -30,7 +30,8 @@ phpstan:
 phpunit:
   allow_failure: true
 
-# Build against Drupal 11.4.0 with composer-drupal-lenient for any Commerce
+# Build against Drupal 11.4.9 (the current 11.4 release, which has the Twig 3.30
+# fix #3625969) with composer-drupal-lenient for any Commerce
 # contrib that has not yet tagged a Drupal 11 release. Expand _LENIENT_ALLOW_LIST
 # as the resolver reports each blocker.
 
@@ -90,7 +91,7 @@ varbase-e2e-test:
 
 composer:
   variables:
-    DRUPAL_CORE: "11.4.0"
+    DRUPAL_CORE: "11.4.9"
     IGNORE_PROJECT_DRUPAL_CORE_VERSION: "1"
     _LENIENT_ALLOW_LIST: ""
   before_script:
@@ -104,7 +105,3 @@ composer:
     - composer config --no-plugins allow-plugins.php-http/discovery true || true
     - composer config --no-plugins allow-plugins.tbachert/spi true || true
     - composer config --no-plugins allow-plugins.mglaman/composer-drupal-lenient true || true
-    # Temporary (#3625756): Twig 3.30.0 compiles Drupal core's drupal_escape
-    # filter into a direct EscaperRuntime::escape() call, so every page render
-    # is a fatal TypeError. Keep the build below 3.30 until a fixed Twig is out.
-    - composer require --dev --no-update "twig/twig:<3.30"
